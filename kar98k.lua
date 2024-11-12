@@ -4,6 +4,7 @@ minetest.register_tool("rangedweapons:kar98k_uld", {
 	stack_max= 1,
 	wield_scale = {x=1.9,y=1.9,z=1.1},
 	range = 0,
+	groups = {not_in_creative_inventory = 1},
 		description = "" ..core.colorize("#35cdff","Karabiner 98 kurz\n") ..core.colorize("#FFFFFF", "DMG: 12 | Capacity: 5 rounds\n")..core.colorize("#FFFFFF", "Ammo: 7.62mm | Type: Rifle"),
 	inventory_image = "kar98k.png",
 	on_use = function(user)
