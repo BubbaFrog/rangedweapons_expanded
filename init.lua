@@ -598,7 +598,7 @@ recoil(player)
 end
 
 if rweapons_gun_durability == "true" then
-itemstack:add_wear(65535/gun_durability)
+itemstack:add_wear(65535/gun_durability/4)
 end
 itemstack:set_name(gun_cooling)
 
