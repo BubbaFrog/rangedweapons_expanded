@@ -1,32 +1,47 @@
+local slowdown_items = {
+"rangedweapons:minigun",
+"rangedweapons:rpg",
+"rangedweapons:rpg_rld",
+"rangedweapons:barrett",
+"rangedweapons:china_lake",
+"rangedweapons:m60",
+"rangedweapons:negev",
+"rangedweapons:awp",
+"rangedweapons:m200",
+"rangedweapons:m2",
+"rangedweapons:m2_r",
+}
+
+
+local player_speeds = {}
+
+local function is_slowdown_item(item_name)
+    for _, item in ipairs(slowdown_items) do
+        if item == item_name then
+            return true
+        end
+    end
+    return false
+end
+local function update_player_speed(player)
+    local player_name = player:get_player_name()
+    local wielded_item = player:get_wielded_item():get_name()
+    local current_speed = player:get_physics_override().speed or 1.0
+
+    if is_slowdown_item(wielded_item) then
+        if not player_speeds[player_name] then
+            player_speeds[player_name] = current_speed
+        end
+        player:set_physics_override({speed = player_speeds[player_name] * 0.5, jump = 1.0})
+    else
+        if player_speeds[player_name] then
+            player:set_physics_override({speed = player_speeds[player_name], jump = 1.0})
+            player_speeds[player_name] = nil
+        end
+    end
+end
 minetest.register_globalstep(function(dtime)
     for _, player in ipairs(minetest.get_connected_players()) do
-        local wielded_item = player:get_wielded_item():get_name()
-        if wielded_item == "rangedweapons:minigun" then
-            player:set_physics_override({speed = 0.5})
-        elseif wielded_item == "rangedweapons:rpg" then
-            player:set_physics_override({speed = 0.5})
-        elseif wielded_item == "rangedweapons:rpg_rld" then
-            player:set_physics_override({speed = 0.5})
-        elseif wielded_item == "rangedweapons:barrett" then
-            player:set_physics_override({speed = 0.5})
-        elseif wielded_item == "rangedweapons:china_lake" then
-            player:set_physics_override({speed = 0.5})
-        elseif wielded_item == "rangedweapons:m60" then
-            player:set_physics_override({speed = 0.5})
-        elseif wielded_item == "rangedweapons:m79" then
-            player:set_physics_override({speed = 0.5})
-        elseif wielded_item == "rangedweapons:negev" then
-            player:set_physics_override({speed = 0.5})
-        elseif wielded_item == "rangedweapons:awp" then
-            player:set_physics_override({speed = 0.5})
-        elseif wielded_item == "rangedweapons:m200" then
-            player:set_physics_override({speed = 0.5})
-        elseif wielded_item == "rangedweapons:m2" then
-            player:set_physics_override({speed = 0.25})
-        elseif wielded_item == "rangedweapons:m2_r" then
-            player:set_physics_override({speed = 0.25})
-        else
-            player:set_physics_override({speed = 1.0})
-        end
+        update_player_speed(player)
     end
 end)
