@@ -41,7 +41,7 @@ minetest.register_tool("rangedweapons:stoeger_rld", {
 -----------------gun--------------
 
 minetest.register_tool("rangedweapons:stoeger", {
-		description = "" ..core.colorize("#35cdff","Sawed off Stoeger shotgun\n") ..core.colorize("#FFFFFF", "Ranged damage: 4/pellet\n")..core.colorize("#FFFFFF", "Accuracy: 65%\n")..core.colorize("#FFFFFF", "Critical chance: 10%\n") ..core.colorize("#FFFFFF", "Critical efficiency: 2x\n") ..core.colorize("#FFFFFF", "Ammunition: 12 gauge shells\n")..core.colorize("#FFFFFF", "Reload delay: 1.0\n")..core.colorize("#FFFFFF", "Clip size: 2\n") ..core.colorize("#FFFFFF", "Rate of fire: 0.625\n") ..core.colorize("#FFFFFF", "Gun type:Shotgun \n") ..core.colorize("#FFFFFF", "Bullet velocity: 220"),
+description = "" ..core.colorize("#35cdff","Sawed-off Stoeger shotgun\n") ..core.colorize("#FFFFFF", "DMG: 4x5 | Capacity: 2 rounds\n")..core.colorize("#FFFFFF", "Ammo: 12 gauge | Type: Shotgun"),
 	range = 0,
 	wield_scale = {x=0.9,y=0.9,z=1.0},
 	inventory_image = "stoeger.png",
@@ -55,7 +55,7 @@ minetest.register_tool("rangedweapons:stoeger", {
 		gun_icon = "stoeger_icon.png",
 		gun_unloaded = "rangedweapons:stoeger_rr",
 
-		gun_velocity = 220,
+		gun_velocity = 30,
 		gun_accuracy = 65,
 		gun_cooldown = 0.625,
 		gun_reload = 1.7/4,
@@ -143,7 +143,7 @@ minetest.register_tool("rangedweapons:stoeger2_rld", {
 -----------------gun--------------
 
 minetest.register_tool("rangedweapons:stoeger2", {
-		description = "" ..core.colorize("#35cdff","Stoeger shotgun\n") ..core.colorize("#FFFFFF", "Ranged damage: 4/pellet\n")..core.colorize("#FFFFFF", "Accuracy: 77%\n") ..core.colorize("#FFFFFF", "Critical chance: 25%\n") ..core.colorize("#FFFFFF", "Critical efficiency: 2x\n") ..core.colorize("#FFFFFF", "Ammunition: 12 gauge shells\n")..core.colorize("#FFFFFF", "Reload delay: 2.0\n")..core.colorize("#FFFFFF", "Clip size: 2\n") ..core.colorize("#FFFFFF", "Rate of fire: 0.625\n") ..core.colorize("#FFFFFF", "Gun type: Shotgun \n") ..core.colorize("#FFFFFF", "Bullet velocity: 220"),
+description = "" ..core.colorize("#35cdff","Stoeger shotgun\n") ..core.colorize("#FFFFFF", "DMG: 4x3 | Capacity: 2 rounds\n")..core.colorize("#FFFFFF", "Ammo: 12 gauge | Type: Shotgun"),
 	range = 0,
 	wield_scale = {x=1.8,y=1.8,z=1.0},
 	inventory_image = "stoeger2.png",
@@ -159,7 +159,7 @@ minetest.register_tool("rangedweapons:stoeger2", {
 		gun_icon = "stoeger2_icon.png",
 		gun_unloaded = "rangedweapons:stoeger2_rr",
 		gun_cooling = "rangedweapons:stoeger2",
-		gun_velocity = 220,
+		gun_velocity = 30,
 		gun_accuracy = 77,
 
 		gun_reload = 2.0/4,

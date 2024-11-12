@@ -48,13 +48,13 @@ minetest.register_tool("rangedweapons:rugeriv_rrr", {
 
 
 minetest.register_tool("rangedweapons:rugeriv", {
-		description = "" ..core.colorize("#35cdff","Ruger 22lr mark.IV\n") ..core.colorize("#FFFFFF", "Gun damage: 5\n") ..core.colorize("#FFFFFF", "Accuracy: 99%\n") ..core.colorize("#FFFFFF", "Gun Critical chance: 20%\n") ..core.colorize("#FFFFFF", "Gun Critical efficiency: 2.2x\n") ..core.colorize("#FFFFFF", "Reload delay: 0.6\n")..core.colorize("#FFFFFF", "Clip size: 8\n") ..core.colorize("#FFFFFF", "Ammunition: 22lr\n") ..core.colorize("#FFFFFF", "Rate of fire: 0.2\n") ..core.colorize("#FFFFFF", "Gun type: Handgun\n") ..core.colorize("#FFFFFF", "Bullet velocity: 230"),
+description = "" ..core.colorize("#35cdff","Ruger Mk II\n") ..core.colorize("#FFFFFF", "DMG: 4 | Capacity: 8 rounds\n")..core.colorize("#FFFFFF", "Ammo: .22 LR | Type: Pistol"),
 	wield_scale = {x=1.2,y=1.2,z=1.2},
 	range = 0,
 	inventory_image = "rugeriv.png",
 
 RW_gun_capabilities = {
-		gun_damage = {fleshy=5,knockback=0},
+		gun_damage = {fleshy=4,knockback=0},
         gun_recoil = 0.5,
 		gun_crit = 15,
 		gun_critEffc = 2.2,
@@ -64,7 +64,7 @@ RW_gun_capabilities = {
 		gun_icon = "rugeriv.png",
 		gun_unloaded = "rangedweapons:rugeriv_r",
 		gun_cooling = "rangedweapons:rugeriv_rld",
-		gun_velocity = 230,
+		gun_velocity = 30,
 		gun_accuracy = 96,
 		gun_cooldown = 0.2,
 		gun_reload = 0.7/4,

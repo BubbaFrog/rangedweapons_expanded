@@ -52,7 +52,7 @@ minetest.register_tool("rangedweapons:kriss_sv_rld", {
 	minetest.register_tool("rangedweapons:kriss_sv", {
 	stack_max= 1,
 	wield_scale = {x=1.75,y=1.75,z=1.15},
-		description = "" ..core.colorize("#35cdff","Kriss Super V\n") ..core.colorize("#FFFFFF", "Gun damage: 4\n") ..core.colorize("#FFFFFF", "accuracy: 78%\n")  ..core.colorize("#FFFFFF", "Gun Critical chance: 6%\n") ..core.colorize("#FFFFFF", "Critical efficiency: 1.85x\n") ..core.colorize("#FFFFFF", "Reload delay: 0.9\n") ..core.colorize("#FFFFFF", "Clip size: 33/33/13\n")   ..core.colorize("#FFFFFF", "Ammunition: 9x19mm parabellum/10mm auto/.45 acp\n") ..core.colorize("#FFFFFF", "Rate of fire: 0.05\n") ..core.colorize("#FFFFFF", "Gun type: machine pistol\n") ..core.colorize("#FFFFFF", "Bullet velocity: 220"),
+		description = "" ..core.colorize("#35cdff","Kriss SV \n") ..core.colorize("#FFFFFF", "DMG: 4 | Capacity: 33/33/13 rounds\n")..core.colorize("#FFFFFF", "Ammo: 9x19mm Parabellum/10mm/.45 ACP | Type: SMG"),
 	range = 0,
 	inventory_image = "rangedweapons_kriss_sv.png",
 	RW_gun_capabilities = {
@@ -67,7 +67,7 @@ minetest.register_tool("rangedweapons:kriss_sv_rld", {
 		gun_icon = "rangedweapons_kriss_sv_icon.png",
 		gun_unloaded = "rangedweapons:kriss_sv_r",
         gun_cooling = "rangedweapons:kriss_sv_rld",
-		gun_velocity = 220,
+		gun_velocity = 30,
 		gun_accuracy = 78,
 		gun_cooldown = 0.05,
 		gun_reload = 0.9/4,

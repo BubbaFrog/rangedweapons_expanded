@@ -26,8 +26,7 @@ minetest.register_tool("rangedweapons:bb_gun_rld", {
 
 
 minetest.register_tool("rangedweapons:bb_gun", {
-		description = "" ..core.colorize("#35cdff","Daisy Red Ryder BB gun \n") ..core.colorize("#FFFFFF", "Ranged damage: 1\n")..core.colorize("#FFFFFF", "Accuracy: 88%\n") ..core.colorize("#FFFFFF", "Critical chance: 11%\n") ..core.colorize("#FFFFFF", "Critical efficiency: 10x\n") ..core.colorize("#FFFFFF", "Ammunition: steel BBs\n") ..core.colorize("#FFFFFF", "Reload time: 0.2\n") ..core.colorize("#FFFFFF", "Clip Size: 100\n")..core.colorize("#FFFFFF", "Gun type: Rifle\n")..core.colorize("#FFFFFF", "Block penetration: 1%\n")
-..core.colorize("#FFFFFF", "penetration: 15%\n") ..core.colorize("#FFFFFF", "Bullet velocity: 35"),
+		description = "" ..core.colorize("#35cdff","Daisy red ryder BB gun\n") ..core.colorize("#FFFFFF", "DMG: 1 | Capacity: 100 BBs\n")..core.colorize("#FFFFFF", "Ammo: steel BBs | Type: air gun"),
 	range = 0,
 	wield_scale = {x=1.25,y=1.25,z=1.1},
 	inventory_image = "bb_gun.png",

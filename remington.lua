@@ -21,7 +21,7 @@ minetest.register_tool("rangedweapons:remington_rlding", {
 })
 
 minetest.register_tool("rangedweapons:remington", {
-		description = "" ..core.colorize("#35cdff","Remington 870\n") ..core.colorize("#FFFFFF", "Ranged damage: 4/pellet\n") ..core.colorize("#FFFFFF", "projectiles: 4\n") ..core.colorize("#FFFFFF", "Gun gravity: 0.5\n") ..core.colorize("#FFFFFF", "Accuracy: 60%\n") ..core.colorize("#FFFFFF", "Critical chance: 4%\n") ..core.colorize("#FFFFFF", "Critical efficiency: 2.0x\n") ..core.colorize("#FFFFFF", "Ammunition: 12 gauge shells\n") ..core.colorize("#FFFFFF", "Pump delay: 0.8\n")..core.colorize("#FFFFFF", "Clip size: 4\n") ..core.colorize("#27a600", "Gun is ready to fire!\n") ..core.colorize("#fff21c", "Right-click to load in a bullet!\n")  ..core.colorize("#FFFFFF", "Gun type: shotgun\n") ..core.colorize("#FFFFFF", "Bullet velocity: 220"),
+		description = "" ..core.colorize("#35cdff","Remington 870\n") ..core.colorize("#FFFFFF", "DMG: 4x4 | Capacity: 4 rounds\n")..core.colorize("#FFFFFF", "Ammo: 12 gauge | Type: Shotgun"),
 	range = 0,
 	wield_scale = {x=1.9,y=1.9,z=1.1},
 	inventory_image = "rangedweapons_remington.png",
@@ -35,7 +35,7 @@ RW_gun_capabilities = {
 		gun_icon = "rangedweapons_remington_icon.png",
 		gun_unloaded = "rangedweapons:remington_rld",
 		gun_cooling = "rangedweapons:remington_uld",
-		gun_velocity = 220,
+		gun_velocity = 30,
 		gun_accuracy = 60,
 		gun_cooldown = 0.8,
 		gun_gravity = 0.5,
@@ -62,7 +62,7 @@ minetest.register_tool("rangedweapons:remington_uld", {
 	stack_max= 1,
 	wield_scale = {x=1.9,y=1.9,z=1.1},
 	range = 0,
-		description = "" ..core.colorize("#35cdff","Remington 870\n") ..core.colorize("#FFFFFF", "Ranged damage: 5\n") ..core.colorize("#FFFFFF", "projectiles: 4\n") ..core.colorize("#FFFFFF", "Gun gravity: 5\n") ..core.colorize("#FFFFFF", "Accuracy: 40%\n")..core.colorize("#FFFFFF", "knockback: 5\n") ..core.colorize("#FFFFFF", "Critical chance: 4%\n") ..core.colorize("#FFFFFF", "Critical efficiency: 2.0x\n") ..core.colorize("#FFFFFF", "Ammunition: 12 gauge shells\n") ..core.colorize("#FFFFFF", "Pump delay: 0.8\n")..core.colorize("#FFFFFF", "Clip size: 4\n") ..core.colorize("#be0d00", "Right-click, to eject the empty shell!\n") ..core.colorize("#fff21c", "Right-click to load in a bullet!\n")  ..core.colorize("#FFFFFF", "Gun type: shotgun\n") ..core.colorize("#FFFFFF", "Bullet velocity: 220"),
+		description = "" ..core.colorize("#35cdff","Remington 870\n") ..core.colorize("#FFFFFF", "DMG: 4x4 | Capacity: 4 rounds\n")..core.colorize("#FFFFFF", "Ammo: 12 gauge | Type: Shotgun"),
 	inventory_image = "rangedweapons_remington.png",
 	groups = {not_in_creative_inventory = 1},
 	on_use = function(user)

@@ -14,13 +14,12 @@ minetest.register_tool("rangedweapons:minigun_r", {
 	minetest.register_tool("rangedweapons:minigun", {
 	stack_max= 1,
 	wield_scale = {x=3.0,y=3.0,z=3.0},
-		description = "" ..core.colorize("#35cdff","M134 minigun\n") ..core.colorize("#FFFFFF", "Gun damage: 3\n") ..core.colorize("#FFFFFF", "accuracy: 50%\n")  ..core.colorize("#FFFFFF", "Gun Critical chance: 14%\n")..core.colorize("#FFFFFF", "Critical efficiency: 3.0x\n")  ..core.colorize("#FFFFFF", "Reload delay: 2.0\n") ..core.colorize("#FFFFFF", "Clip size: as much as you can\n")   ..core.colorize("#FFFFFF", "Ammunition: 7.62mm rounds\n") ..core.colorize("#FFFFFF", "Rate of fire: 0.0001(full-auto)\n") ..core.colorize("#FFFFFF", "Gun type: heavy machinegun\n") ..core.colorize("#FFFFFF", "Block penetration: 15%\n")
-..core.colorize("#FFFFFF", "Enemy penetration: 33%\n") ..core.colorize("#FFFFFF", "Bullet velocity: 270"),
+		description = "" ..core.colorize("#35cdff","M134 Minigun\n") ..core.colorize("#FFFFFF", "DMG: 5 | Capacity: 150 rounds\n")..core.colorize("#FFFFFF", "Ammo: 7.62mm | Type: Machine gun"),
 	range = 0,
 	inventory_image = "rangedweapons_minigun.png",
 	RW_gun_capabilities = {
 		automatic_gun = 1,
-		gun_damage = {fleshy=3,knockback=0},
+		gun_damage = {fleshy=5,knockback=0},
         gun_recoil = 0.75,
 		gun_crit = 14,
 		gun_critEffc = 3.0,
@@ -28,7 +27,7 @@ minetest.register_tool("rangedweapons:minigun_r", {
 		gun_skill = {"heavy_skill",100},
 		gun_icon = "rangedweapons_minigun_icon.png",
 		gun_unloaded = "rangedweapons:minigun_r",
-		gun_velocity = 270,
+		gun_velocity = 50,
 		gun_accuracy = 50,
 		gun_cooldown = 0.00001,
 		gun_reload = 2.0,

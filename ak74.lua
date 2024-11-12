@@ -47,8 +47,7 @@ minetest.register_tool("rangedweapons:ak74_rld", {
 	minetest.register_tool("rangedweapons:ak74", {
 	stack_max= 1,
 	wield_scale = {x=1.75,y=1.75,z=1.3},
-		description = "" ..core.colorize("#35cdff","AK-74\n") ..core.colorize("#FFFFFF", "Gun damage: 5\n") ..core.colorize("#FFFFFF", "accuracy: 82%\n")  ..core.colorize("#FFFFFF", "Gun Critical chance: 32%\n")..core.colorize("#FFFFFF", "Critical efficiency: 3.5x\n")  ..core.colorize("#FFFFFF", "Reload delay: 1.7\n") ..core.colorize("#FFFFFF", "Clip size: 30\n")   ..core.colorize("#FFFFFF", "Ammunition: 5.45mm rounds\n") ..core.colorize("#FFFFFF", "Rate of fire: 0.09(full-auto)\n") ..core.colorize("#FFFFFF", "Gun type: assault rifle\n") ..core.colorize("#FFFFFF", "Block penetration: 5%\n")
-..core.colorize("#FFFFFF", "Enemy penetration: 15%\n") ..core.colorize("#FFFFFF", "Bullet velocity: 240"),
+		description = "" ..core.colorize("#35cdff","AK-74\n") ..core.colorize("#FFFFFF", "DMG: 5 | Capacity: 30 rounds\n")..core.colorize("#FFFFFF", "Ammo: 5.45mm | Type: assault rifle"),
 	range = 0,
 	inventory_image = "ak74.png",
 	RW_gun_capabilities = {

@@ -21,7 +21,7 @@ minetest.register_tool("rangedweapons:beretta_r", {
 })
 
 minetest.register_tool("rangedweapons:beretta", {
-		description = "" ..core.colorize("#35cdff","Beretta M9\n") ..core.colorize("#FFFFFF", "Gun damage: 6\n")..core.colorize("#FFFFFF", "Accuracy: 94%\n") ..core.colorize("#FFFFFF", "Gun crit chance: 13%\n")..core.colorize("#FFFFFF", "Critical efficiency: 2.1x\n") ..core.colorize("#FFFFFF", "Reload delay: 0.5\n")..core.colorize("#FFFFFF", "Clip size: 15\n") ..core.colorize("#FFFFFF", "Ammunition: 9x19mm Parabellum\n") ..core.colorize("#FFFFFF", "Rate of fire: 0.1\n") ..core.colorize("#FFFFFF", "Gun type: Handgun\n") ..core.colorize("#FFFFFF", "Bullet velocity: 225"),
+		description = "" ..core.colorize("#35cdff","Beretta M9\n") ..core.colorize("#FFFFFF", "DMG: 6 | Capacity: 15 rounds\n")..core.colorize("#FFFFFF", "Ammo: 9x19mm Parabellum | Type: Pistol"),
 	wield_scale = {x=1.1,y=1.1,z=1.05},
 	range = 0,
 	inventory_image = "rangedweapons_beretta.png",
@@ -36,7 +36,7 @@ RW_gun_capabilities = {
 		gun_icon = "rangedweapons_beretta_icon.png",
 		gun_unloaded = "rangedweapons:beretta_r",
 		gun_cooling = "rangedweapons:beretta_rld",
-		gun_velocity = 225,
+		gun_velocity = 25,
 		gun_accuracy = 94,
 		gun_cooldown = 0.1,
 		gun_reload = 0.5,

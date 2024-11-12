@@ -4,7 +4,7 @@ minetest.register_tool("rangedweapons:m200_uld", {
 	stack_max= 1,
 	wield_scale = {x=2.1,y=2.1,z=1.2},
 	range = 0,
-		description = "" ..core.colorize("#35cdff","m200 intervention \n") ..core.colorize("#FFFFFF", "Ranged damage:22 + 75/sec of bullet lifetime\n")..core.colorize("#FFFFFF", "Accuracy: 100%\n") ..core.colorize("#FFFFFF", "knockback: 20\n") ..core.colorize("#FFFFFF", "Critical chance: 33%\n") ..core.colorize("#FFFFFF", "Critical efficiency: x3.25\n") ..core.colorize("#FFFFFF", "Ammunition: .408 chey tac\n") ..core.colorize("#FFFFFF", "Rate of fire: 1.5\n") ..core.colorize("#FFFFFF", "Reload time: 2.5\n") ..core.colorize("#FFFFFF", "Zoom: 15x\n") ..core.colorize("#be0d00", "Right-click to eject empty bullet shell\n") ..core.colorize("#FFFFFF", "Clip size: 7\n") ..core.colorize("#FFFFFF", "Enemy penetration:45%\n") ..core.colorize("#FFFFFF", "Block penetration:15%\n") ..core.colorize("#FFFFFF", "Gun type: Rifle\n") ..core.colorize("#FFFFFF", "Bullet velocity: 280"),
+		description = "" ..core.colorize("#35cdff","CheyTac m200 intervention\n") ..core.colorize("#FFFFFF", "DMG: 22 | Capacity: 7 rounds\n")..core.colorize("#FFFFFF", "Ammo: .408 CheyTac | Type: Anti-material rifle"),
 	groups = {not_in_creative_inventory = 1},
 	inventory_image = "rangedweapons_m200.png",
 	weapon_zoom = 7.5,
@@ -60,7 +60,7 @@ minetest.register_tool("rangedweapons:m200_rld", {
 
 
 minetest.register_tool("rangedweapons:m200", {
-		description = "" ..core.colorize("#35cdff","m200 intervention \n") ..core.colorize("#FFFFFF", "Ranged damage:22 + 75/sec of bullet lifetime\n")..core.colorize("#FFFFFF", "Accuracy: 100%\n") ..core.colorize("#FFFFFF", "Critical chance: 33%\n") ..core.colorize("#FFFFFF", "Critical efficiency: x3.25\n") ..core.colorize("#FFFFFF", "Ammunition: .408 chey tac\n") ..core.colorize("#FFFFFF", "Rate of fire: 1.5\n") ..core.colorize("#FFFFFF", "Reload time: 2.5\n") ..core.colorize("#FFFFFF", "Zoom: 15x\n") ..core.colorize("#27a600", "The gun is loaded!\n") ..core.colorize("#FFFFFF", "Clip size: 7\n") ..core.colorize("#FFFFFF", "Enemy penetration:45%\n") ..core.colorize("#FFFFFF", "Block penetration:15%\n") ..core.colorize("#FFFFFF", "Gun type: Rifle\n") ..core.colorize("#FFFFFF", "Bullet velocity: 280"),
+		description = "" ..core.colorize("#35cdff","CheyTac m200 intervention\n") ..core.colorize("#FFFFFF", "DMG: 22 | Capacity: 7 rounds\n")..core.colorize("#FFFFFF", "Ammo: .408 CheyTac | Type: Anti-material rifle"),
 	range = 0,
 	weapon_zoom = 6,
 	wield_scale = {x=2.1,y=2.1,z=1.2},
@@ -76,7 +76,7 @@ RW_gun_capabilities = {
 		gun_icon = "rangedweapons_m200_icon.png",
 		gun_unloaded = "rangedweapons:m200_r",
 		gun_cooling = "rangedweapons:m200_uld",
-		gun_velocity = 280,
+		gun_velocity = 50,
 		gun_accuracy = 100,
 		gun_cooldown = 1.5,
 		gun_reload = 2.5/4,

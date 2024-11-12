@@ -51,8 +51,7 @@ minetest.register_tool("rangedweapons:rpk_rld", {
 	minetest.register_tool("rangedweapons:rpk", {
 	stack_max= 1,
 	wield_scale = {x=1.75,y=1.75,z=1.3},
-		description = "" ..core.colorize("#35cdff","RPK\n") ..core.colorize("#FFFFFF", "Gun damage: 5\n") ..core.colorize("#FFFFFF", "accuracy: 60%\n")  ..core.colorize("#FFFFFF", "Gun Critical chance: 12%\n")..core.colorize("#FFFFFF", "Critical efficiency: 3.0x\n")  ..core.colorize("#FFFFFF", "Reload delay: 2.0\n") ..core.colorize("#FFFFFF", "Clip size: 75\n")   ..core.colorize("#FFFFFF", "Ammunition: 7.62mm rounds\n") ..core.colorize("#FFFFFF", "Rate of fire: 0.10(full-auto)\n") ..core.colorize("#FFFFFF", "Gun type: light machinegun\n") ..core.colorize("#FFFFFF", "Block penetration: 10%\n")
-..core.colorize("#FFFFFF", "Enemy penetration: 25%\n") ..core.colorize("#FFFFFF", "Bullet velocity: 255"),
+description = "" ..core.colorize("#35cdff","RPK\n") ..core.colorize("#FFFFFF", "DMG: 5 | Capacity: 75 round\n")..core.colorize("#FFFFFF", "Ammo: 7.62mm | Type: Machine gun"),
 	range = 0,
 	inventory_image = "rangedweapons_rpk.png",
 	RW_gun_capabilities = {
@@ -67,7 +66,7 @@ minetest.register_tool("rangedweapons:rpk_rld", {
 		gun_icon = "rangedweapons_rpk_icon.png",
 		gun_unloaded = "rangedweapons:rpk_r",
         gun_cooling="rangedweapons:rpk_rld",
-		gun_velocity = 255,
+		gun_velocity = 45,
 		gun_accuracy = 70,
 		gun_cooldown = 0.1,
 		gun_reload = 2.0/4,

@@ -4,7 +4,7 @@ minetest.register_tool("rangedweapons:barrett_uld", {
 	stack_max= 1,
 	wield_scale = {x=3.1,y=3.1,z=2.2},
 	range = 0,
-		description = "" ..core.colorize("#35cdff","Barrett M82 \n") ..core.colorize("#FFFFFF", "Ranged damage: 35\n")..core.colorize("#FFFFFF", "Accuracy: 100%\n") ..core.colorize("#FFFFFF", "knockback: 20\n") ..core.colorize("#FFFFFF", "Critical chance: 50%\n") ..core.colorize("#FFFFFF", "Critical efficiency: x3.25\n") ..core.colorize("#FFFFFF", "Ammunition: .50 BMG\n") ..core.colorize("#FFFFFF", "Rate of fire: 2.5\n") ..core.colorize("#FFFFFF", "Reload time: 3.5\n") ..core.colorize("#FFFFFF", "Zoom: 15x\n") ..core.colorize("#be0d00", "Right-click to eject empty bullet shell\n") ..core.colorize("#FFFFFF", "Clip size: 5\n") ..core.colorize("#FFFFFF", "Enemy penetration:45%\n") ..core.colorize("#FFFFFF", "Block penetration:15%\n") ..core.colorize("#FFFFFF", "Gun type: Rifle\n") ..core.colorize("#FFFFFF", "Bullet velocity: 280"),
+		description = "" ..core.colorize("#35cdff","Barrett M82\n") ..core.colorize("#FFFFFF", "DMG: 35 | Capacity: 6 rounds\n")..core.colorize("#FFFFFF", "Ammo:  .50 BMG | Type: anti-material rifle"),
 	groups = {not_in_creative_inventory = 1},
 	inventory_image = "barrett.png",
 	weapon_zoom = 7.5,
@@ -61,7 +61,7 @@ minetest.register_tool("rangedweapons:barrett_rld", {
 
 
 minetest.register_tool("rangedweapons:barrett", {
-		description = "" ..core.colorize("#35cdff","Barrett M82 \n") ..core.colorize("#FFFFFF", "Ranged damage: 35\n")..core.colorize("#FFFFFF", "Accuracy: 100%\n") ..core.colorize("#FFFFFF", "Critical chance: 50%\n") ..core.colorize("#FFFFFF", "Critical efficiency: x3.25\n") ..core.colorize("#FFFFFF", "Ammunition: .50 BMG\n") ..core.colorize("#FFFFFF", "Rate of fire: 2.5\n") ..core.colorize("#FFFFFF", "Reload time: 3.5\n") ..core.colorize("#FFFFFF", "Zoom: 15x\n") ..core.colorize("#be0d00", "Right-click to eject empty bullet shell\n") ..core.colorize("#FFFFFF", "Clip size: 5\n") ..core.colorize("#FFFFFF", "Enemy penetration:45%\n") ..core.colorize("#FFFFFF", "Block penetration:15%\n") ..core.colorize("#FFFFFF", "Gun type: Rifle\n") ..core.colorize("#FFFFFF", "Bullet velocity: 280"),
+		description = "" ..core.colorize("#35cdff","Barrett M82\n") ..core.colorize("#FFFFFF", "DMG: 35 | Capacity: 6 rounds\n")..core.colorize("#FFFFFF", "Ammo:  .50 BMG | Type: anti-material rifle"),
 	range = 0,
 	weapon_zoom = 6,
 	wield_scale = {x=3.1,y=3.1,z=2.2},

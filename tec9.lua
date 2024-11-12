@@ -53,7 +53,7 @@ minetest.register_tool("rangedweapons:tec9_rld", {
 	minetest.register_craftitem("rangedweapons:tec9", {
 	stack_max= 1,
 	wield_scale = {x=1.25,y=1.25,z=1.50},
-		description = "" ..core.colorize("#35cdff","TEC-9\n") ..core.colorize("#FFFFFF", "Gun damage: 6\n") ..core.colorize("#FFFFFF", "accuracy: 75%\n") ..core.colorize("#FFFFFF", "Gun Critical chance: 9%\n") ..core.colorize("#FFFFFF", "Gun Critical efficiency: 1.9x\n") ..core.colorize("#FFFFFF", "Reload delay: 1.0\n") ..core.colorize("#FFFFFF", "Clip size: 50\n")   ..core.colorize("#FFFFFF", "Ammunition: 9x19mm parabellum\n")  ..core.colorize("#FFFFFF", "Rate of fire: 0.2\n") ..core.colorize("#FFFFFF", "Gun type: machine pistol\n") ..core.colorize("#FFFFFF", "Bullet velocity: 220"),
+description = "" ..core.colorize("#35cdff","TEC-9\n") ..core.colorize("#FFFFFF", "DMG: 6 | Capacity: 50 rounds\n")..core.colorize("#FFFFFF", "Ammo: 9x19mm Parabellum | Type: Pistol"),
 	range = 0,
 	inventory_image = "rangedweapons_tec9.png",
 	RW_gun_capabilities = {
@@ -68,7 +68,7 @@ minetest.register_tool("rangedweapons:tec9_rld", {
 		gun_icon = "rangedweapons_tec9_icon.png",
 		gun_unloaded = "rangedweapons:tec9_r",
         gun_cooling="rangedweapons:tec9_rld",
-		gun_velocity = 220,
+		gun_velocity = 30,
 		gun_accuracy = 75,
 		gun_cooldown = 0.1,
 		gun_reload = 1.0/4,

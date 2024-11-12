@@ -21,7 +21,7 @@ minetest.register_tool("rangedweapons:alof_r", {
 })
 
 minetest.register_tool("rangedweapons:alof", {
-		description = "" ..core.colorize("#35cdff","4 gauge shotgun with Alof's loading system'\n") ..core.colorize("#FFFFFF", "Ranged damage: 4/pellet\n") ..core.colorize("#FFFFFF", "projectiles: 5\n") ..core.colorize("#FFFFFF", "Gun gravity: 0.5\n") ..core.colorize("#FFFFFF", "Accuracy: 49%\n") ..core.colorize("#FFFFFF", "Critical chance: 6%\n") ..core.colorize("#FFFFFF", "Critical efficiency: 2.0x\n") ..core.colorize("#FFFFFF", "Ammunition: 4 gauge shells\n") ..core.colorize("#FFFFFF", "Pump delay: 1.2\n")..core.colorize("#FFFFFF", "Clip size: 5\n") ..core.colorize("#27a600", "Gun is ready to fire!\n") ..core.colorize("#fff21c", "Right-click to load in a bullet!\n")  ..core.colorize("#FFFFFF", "Gun type: shotgun\n") ..core.colorize("#FFFFFF", "Bullet velocity: 225"),
+		description = "" ..core.colorize("#35cdff","4 gauge shotgun with alof's loading system\n") ..core.colorize("#FFFFFF", "DMG: 4x5 | Capacity: 4 rounds\n")..core.colorize("#FFFFFF", "Ammo: 4 gauge | Type: shotgun"),
 	range = 0,
 	wield_scale = {x=1.9,y=1.9,z=1.1},
 	inventory_image = "alof.png",
@@ -35,7 +35,7 @@ RW_gun_capabilities = {
 		gun_icon = "henry_icon.png",
 		gun_unloaded = "rangedweapons:alof_r",
 		gun_cooling = "rangedweapons:alof_uld",
-		gun_velocity = 225,
+		gun_velocity = 25,
 		gun_accuracy = 49,
 		gun_cooldown = 2.2,
 		gun_gravity = 0.4,
@@ -62,7 +62,7 @@ minetest.register_tool("rangedweapons:alof_uld", {
 	stack_max= 1,
 	wield_scale = {x=1.9,y=1.9,z=1.1},
 	range = 0,
-		description = "" ..core.colorize("#35cdff","4 gauge shotgun with Alof's loading system'\n") ..core.colorize("#FFFFFF", "Ranged damage: 4/pellet\n") ..core.colorize("#FFFFFF", "projectiles: 5\n") ..core.colorize("#FFFFFF", "Gun gravity: 0.5\n") ..core.colorize("#FFFFFF", "Accuracy: 49%\n") ..core.colorize("#FFFFFF", "Critical chance: 6%\n") ..core.colorize("#FFFFFF", "Critical efficiency: 2.0x\n") ..core.colorize("#FFFFFF", "Ammunition: 4 gauge shells\n") ..core.colorize("#FFFFFF", "Pump delay: 1.2\n")..core.colorize("#FFFFFF", "Clip size: 5\n") ..core.colorize("#be0d00", "Right-click, to eject the empty shell!\n") ..core.colorize("#fff21c", "Right-click to load in a bullet!\n")  ..core.colorize("#FFFFFF", "Gun type: shotgun\n") ..core.colorize("#FFFFFF", "Bullet velocity: 225"),
+		description = "" ..core.colorize("#35cdff","4 gauge shotgun with alof's loading system\n") ..core.colorize("#FFFFFF", "DMG: 4x5 | Capacity: 4 rounds\n")..core.colorize("#FFFFFF", "Ammo: 4 gauge | Type: shotgun"),
 	inventory_image = "alof.png",
 	groups = {not_in_creative_inventory = 1},
 	on_use = function(user)
@@ -156,7 +156,7 @@ minetest.register_tool("rangedweapons:henry_rld", {
 -----------------gun--------------
 
 minetest.register_tool("rangedweapons:henry", {
-		description = "" ..core.colorize("#35cdff","Henry 4 gauge shotgun\n") ..core.colorize("#FFFFFF", "Ranged damage: 5/pellet\n")..core.colorize("#FFFFFF", "Accuracy: 49%\n") ..core.colorize("#FFFFFF", "Critical chance: 25%\n") ..core.colorize("#FFFFFF", "Critical efficiency: 1.9x\n") ..core.colorize("#FFFFFF", "Ammunition: 4 gauge shells\n")..core.colorize("#FFFFFF", "Reload delay: 2.0\n")..core.colorize("#FFFFFF", "Clip size: 1\n") ..core.colorize("#FFFFFF", "Rate of fire: 0.625\n") ..core.colorize("#FFFFFF", "Gun type: Shotgun \n") ..core.colorize("#FFFFFF", "Bullet velocity: 225"),
+		description = "" ..core.colorize("#35cdff","Henry 4 gauge shotgun\n") ..core.colorize("#FFFFFF", "DMG: 5x5 | Capacity: 1 round\n")..core.colorize("#FFFFFF", "Ammo: 4 gauge | Type: shotgun\n"),
 	range = 0,
 	wield_scale = {x=1.8,y=1.8,z=1.0},
 	inventory_image = "henry.png",
@@ -172,7 +172,7 @@ minetest.register_tool("rangedweapons:henry", {
 		gun_icon = "henry_icon.png",
 		gun_unloaded = "rangedweapons:henry_rr",
 		gun_cooling = "rangedweapons:henry",
-		gun_velocity = 225,
+		gun_velocity = 25,
 		gun_accuracy = 49,
 
 		gun_reload = 2.0/4,

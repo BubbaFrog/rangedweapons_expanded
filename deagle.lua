@@ -22,8 +22,7 @@ minetest.register_tool("rangedweapons:deagle_r", {
 })
 
 minetest.register_tool("rangedweapons:deagle", {
-		description = "" ..core.colorize("#35cdff","IMI Desert Eagle\n")..core.colorize("#FFFFFF", "Ranged damage: 8\n") ..core.colorize("#FFFFFF", "Accuracy: 85%\n") ..core.colorize("#FFFFFF", "Critical chance: 20%\n") ..core.colorize("#FFFFFF", "Critical efficiency: 3x\n")..core.colorize("#FFFFFF", "Reload delay: 0.6\n")..core.colorize("#FFFFFF", "Clip size: 7\n")  ..core.colorize("#FFFFFF", "Ammunition: .357 Magnum rounds/.44 magnum rounds/.50AE catridges\n") ..core.colorize("#FFFFFF", "Rate of fire: 0.15\n") ..core.colorize("#FFFFFF", "Gun type: Magnum\n") ..core.colorize("#FFFFFF", "Block penetration: 5%\n")
-..core.colorize("#FFFFFF", "penetration: 15%\n")..core.colorize("#FFFFFF", "Bullet velocity: 50"),
+		description = "" ..core.colorize("#35cdff","IMI Desert Eagle\n") ..core.colorize("#FFFFFF", "DMG: 8 | Capacity: 7 rounds\n")..core.colorize("#FFFFFF", "Ammo: .357/.44/.50 AE | Type: Pistol"),
 	wield_scale = {x=1.25,y=1.25,z=1.5},
 	range = 0,
 	inventory_image = "rangedweapons_deagle.png",
@@ -82,8 +81,7 @@ minetest.register_tool("rangedweapons:golden_deagle_r", {
 })
 
 minetest.register_tool("rangedweapons:golden_deagle", {
-		description = "" ..core.colorize("#35cdff","IMI Golden Desert Eagle\n")..core.colorize("#FFFFFF", "Ranged damage: 8\n") ..core.colorize("#FFFFFF", "Accuracy: 90%\n")  ..core.colorize("#FFFFFF", "Critical chance: 23%\n") ..core.colorize("#FFFFFF", "Critical efficiency: 3x\n")..core.colorize("#FFFFFF", "Reload delay: 0.6\n")..core.colorize("#FFFFFF", "Clip size: 7\n")  ..core.colorize("#FFFFFF", "Ammunition: .357 Magnum rounds/.44 magnum rounds/.50AE catridges\n") ..core.colorize("#FFFFFF", "Rate of fire: 0.15\n") ..core.colorize("#FFFFFF", "Gun type: Magnum\n") ..core.colorize("#FFFFFF", "Block penetration: 5%\n")
-..core.colorize("#FFFFFF", "penetration: 15%\n")..core.colorize("#FFFFFF", "Bullet velocity: 250"),
+		description = "" ..core.colorize("#35cdff","IMI Golden Desert Eagle\n") ..core.colorize("#FFFFFF", "DMG: 8 | Capacity: 7 rounds\n")..core.colorize("#FFFFFF", "Ammo: .357/.44/.50 AE | Type: Pistol"),
 	wield_scale = {x=1.25,y=1.25,z=1.5},
 	range = 0,
 	inventory_image = "rangedweapons_golden_deagle.png",

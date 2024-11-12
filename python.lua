@@ -14,13 +14,12 @@ minetest.register_tool("rangedweapons:python_rld", {
 
 
 minetest.register_tool("rangedweapons:python", {
-		description = "" ..core.colorize("#35cdff","Colt Python \n") ..core.colorize("#FFFFFF", "Ranged damage: 10\n")..core.colorize("#FFFFFF", "Accuracy: 95%\n") ..core.colorize("#FFFFFF", "Critical chance: 19%\n") ..core.colorize("#FFFFFF", "Critical efficiency: 2.5x\n") ..core.colorize("#FFFFFF", "Ammunition: .357 Magnum rounds\n") ..core.colorize("#FFFFFF", "Reload time: 0.25\n") ..core.colorize("#FFFFFF", "Clip Size: 6\n")..core.colorize("#FFFFFF", "Gun type: Revolver\n")..core.colorize("#FFFFFF", "Block penetration: 5%\n")
-..core.colorize("#FFFFFF", "penetration: 15%\n") ..core.colorize("#FFFFFF", "Bullet velocity: 255"),
+		description = "" ..core.colorize("#35cdff","Colt python\n") ..core.colorize("#FFFFFF", "DMG: 8 | Capacity: 6 rounds\n")..core.colorize("#FFFFFF", "Ammo: .357 magnum | Type: Revolver"),
 	range = 0,
 	wield_scale = {x=1.25,y=1.25,z=1.1},
 	inventory_image = "rangedweapons_python.png",
 RW_gun_capabilities = {
-		gun_damage = {fleshy=10,knockback=0},
+		gun_damage = {fleshy=8,knockback=0},
         gun_recoil = 1.8,
 		gun_crit = 19,
 		gun_critEffc = 2.2,
@@ -29,7 +28,7 @@ RW_gun_capabilities = {
 		gun_icon = "rangedweapons_python_icon.png",
 		gun_unloaded = "rangedweapons:python_rld",
 		gun_cooling = "rangedweapons:python",
-		gun_velocity = 255,
+		gun_velocity = 55,
 		gun_accuracy = 95,
 		gun_cooldown = 0.2,
 		gun_reload = 0.4,

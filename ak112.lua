@@ -48,8 +48,7 @@ minetest.register_tool("rangedweapons:ak12_rld", {
 	minetest.register_tool("rangedweapons:ak12", {
 	stack_max= 1,
 	wield_scale = {x=1.75,y=1.75,z=1.3},
-		description = "" ..core.colorize("#35cdff","AK-12\n") ..core.colorize("#FFFFFF", "Gun damage: 5\n") ..core.colorize("#FFFFFF", "accuracy: 89%\n")  ..core.colorize("#FFFFFF", "Gun Critical chance: 32%\n")..core.colorize("#FFFFFF", "Critical efficiency: 3.9x\n")  ..core.colorize("#FFFFFF", "Reload delay: 1.8\n") ..core.colorize("#FFFFFF", "Clip size: 40\n")   ..core.colorize("#FFFFFF", "Ammunition: 5.45mm rounds\n") ..core.colorize("#FFFFFF", "Rate of fire: 0.08(full-auto)\n") ..core.colorize("#FFFFFF", "Gun type: assault rifle\n") ..core.colorize("#FFFFFF", "Block penetration: 5%\n")
-..core.colorize("#FFFFFF", "Enemy penetration: 15%\n") ..core.colorize("#FFFFFF", "Bullet velocity: 240"),
+		description = "" ..core.colorize("#35cdff","AK-12\n") ..core.colorize("#FFFFFF", "DMG: 5 | Capacity: 40 rounds\n")..core.colorize("#FFFFFF", "Ammo: 5.45mm | Type: assault rifle"),
 	range = 0,
     weapon_zoom = 1.2,
 	inventory_image = "ak112.png",
@@ -65,7 +64,7 @@ minetest.register_tool("rangedweapons:ak12_rld", {
 		gun_icon = "ak112_icon.png",
 		gun_unloaded = "rangedweapons:ak12_r",
         gun_cooling="rangedweapons:ak12_rld",
-		gun_velocity = 240,
+		gun_velocity = 40,
 		gun_accuracy = 89,
 		gun_cooldown = 0.08,
 		gun_reload = 1.4/4,

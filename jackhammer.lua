@@ -35,7 +35,7 @@ minetest.register_tool("rangedweapons:jackhammer_rrr", {
 	minetest.register_tool("rangedweapons:jackhammer", {
 	stack_max= 1,
 	wield_scale = {x=2.6,y=2.6,z=1.8},
-		description = "" ..core.colorize("#35cdff","Jackhammer\n") ..core.colorize("#FFFFFF", "Ranged damage: 3/pellet\n") ..core.colorize("#FFFFFF", "projectiles: 8\n") ..core.colorize("#FFFFFF", "Gun gravity: 0.5\n") ..core.colorize("#FFFFFF", "accuracy: 55%\n") ..core.colorize("#FFFFFF", "Reload delay: 1.6\n")  ..core.colorize("#FFFFFF", "Clip size: 10\n") ..core.colorize("#FFFFFF", "Critical chance: 7%\n") ..core.colorize("#FFFFFF", "Critical efficiency: 2.2x\n")  ..core.colorize("#FFFFFF", "Ammunition: 12 gauge shell\n") ..core.colorize("#FFFFFF", "Rate of fire: 0.25 (full-auto)\n") ..core.colorize("#FFFFFF", "Gun type: shotgun\n") ..core.colorize("#FFFFFF", "Bullet velocity: 230"),
+		description = "" ..core.colorize("#35cdff","Jackhammer\n") ..core.colorize("#FFFFFF", "DMG: 3x4 | Capacity: 10 rounds\n")..core.colorize("#FFFFFF", "Ammo: 12 gauge | Type: Shotgun"),
 	range = 0,
 	inventory_image = "rangedweapons_jackhammer.png",
 	RW_gun_capabilities = {
@@ -49,11 +49,11 @@ minetest.register_tool("rangedweapons:jackhammer_rrr", {
 		gun_magazine = "rangedweapons:drum_mag",
 		gun_icon = "rangedweapons_jackhammer_icon.png",
 		gun_unloaded = "rangedweapons:jackhammer_r",
-		gun_velocity = 230,
+		gun_velocity = 30,
 		gun_accuracy = 55,
 		gun_cooldown = 0.25,
 		gun_reload = 1.6/4,
-		gun_projectiles = 1,
+		gun_projectiles = 4,
 		has_shell = 1,
 		gun_durability = 825,
 		gun_smokeSize = 9,

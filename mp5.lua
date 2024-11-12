@@ -36,7 +36,7 @@ minetest.register_tool("rangedweapons:mp5_rrr", {
 	minetest.register_tool("rangedweapons:mp5", {
 	stack_max= 1,
 	wield_scale = {x=1.75,y=1.75,z=1.20},
-		description = "" ..core.colorize("#35cdff","MP5\n") ..core.colorize("#FFFFFF", "Gun damage: 5\n") ..core.colorize("#FFFFFF", "accuracy: 74%\n")  ..core.colorize("#FFFFFF", "Gun Critical chance: 7%\n")..core.colorize("#FFFFFF", "Critical efficiency: 2.0x\n")   ..core.colorize("#FFFFFF", "Reload delay: 1.0\n") ..core.colorize("#FFFFFF", "Clip size: 40/40\n")   ..core.colorize("#FFFFFF", "Ammunition: 9x19mm parabellum/10mm auto\n") ..core.colorize("#FFFFFF", "Rate of fire: 0.075(full-auto)\n") ..core.colorize("#FFFFFF", "Gun type: sub-machinegun\n") ..core.colorize("#FFFFFF", "Bullet velocity: 225"),
+		description = "" ..core.colorize("#35cdff","MP5\n") ..core.colorize("#FFFFFF", "DMG: 5 | Capacity: 40 rounds\n")..core.colorize("#FFFFFF", "Ammo: 9x19mm Parabellum/10mm | Type: SMG"),
 	range = 0,
 	inventory_image = "rangedweapons_mp5.png",
 	RW_gun_capabilities = {
@@ -50,7 +50,7 @@ minetest.register_tool("rangedweapons:mp5_rrr", {
 		gun_magazine = "rangedweapons:machinepistol_mag",
 		gun_icon = "rangedweapons_mp5_icon.png",
 		gun_unloaded = "rangedweapons:mp5_r",
-		gun_velocity = 225,
+		gun_velocity = 35,
 		gun_accuracy = 74,
 		gun_cooldown = 0.075,
 		gun_reload = 1.0/4,

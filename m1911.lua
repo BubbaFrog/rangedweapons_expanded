@@ -41,7 +41,7 @@ minetest.register_tool("rangedweapons:m1911_rrr", {
 })
 
 minetest.register_tool("rangedweapons:m1911", {
-		description = "" ..core.colorize("#35cdff","colt m1911\n") ..core.colorize("#FFFFFF", "Gun damage: 7\n")..core.colorize("#FFFFFF", "Accuracy: 92%\n") ..core.colorize("#FFFFFF", "Gun crit chance: 13%\n")..core.colorize("#FFFFFF", "Critical efficiency: 2.1x\n") ..core.colorize("#FFFFFF", "Reload delay: 1.0\n")..core.colorize("#FFFFFF", "Clip size: 8\n") ..core.colorize("#FFFFFF", "Ammunition: .45acp\n") ..core.colorize("#FFFFFF", "Rate of fire: 0.15\n") ..core.colorize("#FFFFFF", "Gun type: Handgun\n") ..core.colorize("#FFFFFF", "Bullet velocity: 225"),
+		description = "" ..core.colorize("#35cdff","Colt M1911\n") ..core.colorize("#FFFFFF", "DMG: 7 | Capacity: 8 rounds\n")..core.colorize("#FFFFFF", "Ammo: .45 ACP | Type: Pistol"),
 	wield_scale = {x=1.1,y=1.1,z=1.05},
 	range = 0,
 	inventory_image = "rangedweapons_m1911.png",
@@ -56,7 +56,7 @@ RW_gun_capabilities = {
 		gun_icon = "rangedweapons_m1911_icon.png",
 		gun_unloaded = "rangedweapons:m1911_r",
 		gun_cooling = "rangedweapons:m1911_rld",
-		gun_velocity = 225,
+		gun_velocity = 35,
 		gun_accuracy = 92,
 		gun_cooldown = 0.15,
 		gun_reload = 1.0/4,

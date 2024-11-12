@@ -44,7 +44,7 @@ minetest.register_tool("rangedweapons:makarov_rrr", {
 
 
 minetest.register_tool("rangedweapons:makarov", {
-		description = "" ..core.colorize("#35cdff","Makarov pistol\n") ..core.colorize("#FFFFFF", "Gun damage: 5\n")..core.colorize("#FFFFFF", "Accuracy: 90%\n") ..core.colorize("#FFFFFF", "Gun crit chance: 10%\n")..core.colorize("#FFFFFF", "Critical efficiency: 2x\n") ..core.colorize("#FFFFFF", "Reload delay: 1.1\n")..core.colorize("#FFFFFF", "Clip size: 8\n") ..core.colorize("#FFFFFF", "Ammunition: 9x19mm Parabellum\n") ..core.colorize("#FFFFFF", "Rate of fire: 0.1\n") ..core.colorize("#FFFFFF", "Gun type: Handgun\n") ..core.colorize("#FFFFFF", "Bullet velocity: 220"),
+		description = "" ..core.colorize("#35cdff","Makarov Pistol\n") ..core.colorize("#FFFFFF", "DMG: 5 | Capacity: 8 rounds\n")..core.colorize("#FFFFFF", "Ammo: 9x19mm Parabellum | Type: Pistol"),
 	range = 0,
 	wield_scale = {x=0.9,y=0.9,z=1.0},
 	inventory_image = "rangedweapons_makarov.png",
@@ -59,7 +59,7 @@ minetest.register_tool("rangedweapons:makarov", {
 		gun_icon = "rangedweapons_makarov_icon.png",
 		gun_unloaded = "rangedweapons:makarov_r",
 		gun_cooling = "rangedweapons:makarov_rld",
-		gun_velocity = 220,
+		gun_velocity = 35,
 		gun_accuracy = 90,
 		gun_cooldown = 0.1,
 		gun_reload = 1.1/4,

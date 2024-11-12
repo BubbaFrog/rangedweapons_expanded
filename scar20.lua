@@ -35,8 +35,7 @@ minetest.register_tool("rangedweapons:scar20_rrr", {
 	minetest.register_tool("rangedweapons:scar20", {
 	stack_max= 1,
 	wield_scale = {x=1.7,y=1.7,z=1.25},
-		description = "" ..core.colorize("#35cdff","FN SCAR 20\n") ..core.colorize("#00FFFF", "Current mode: Full auto\n") ..core.colorize("#FFFFFF", "Ranged damage: 7\n") ..core.colorize("#FFFFFF", "Accuracy: 68%\n") ..core.colorize("#FFFFFF", "Critical chance: 15%\n") ..core.colorize("#FFFFFF", "Critical efficiency: 2.75x\n") ..core.colorize("#FFFFFF", "Ammunition: .308 winchester rounds\n") ..core.colorize("#FFFFFF", "Reload delay: 1.2\n") ..core.colorize("#FFFFFF", "Clip size: 10\n") ..core.colorize("#FFFFFF", "Rate of fire: 0.35\n") ..core.colorize("#FFFFFF", "Block penetration: 37%\n")
-..core.colorize("#FFFFFF", "penetration: 20%\n") ..core.colorize("#FFFFFF", "Gun type: Marksman rifle\n") ..core.colorize("#FFFFFF", "Bullet velocity: 245\n")  ..core.colorize("#FFFFFF", "sneak + reload to switch fire mode"),
+description = "" ..core.colorize("#35cdff","FN Scar 20\n") ..core.colorize("#FFFFFF", "DMG: 7 | Capacity: 10 rounds\n")..core.colorize("#FFFFFF", "Ammo: .308 Winchester | Type: Marksman\n")   ..core.colorize("#FFFFFF", "sneak + reload to switch fire mode - current: Full auto"),
 	range = 0,
     weapon_zoom=4,
 	inventory_image = "rangedweapons_scar.png",
@@ -50,7 +49,7 @@ minetest.register_tool("rangedweapons:scar20_rrr", {
 		
 		gun_icon = "rangedweapons_scar_icon.png",
 		gun_unloaded = "rangedweapons:scar20_r",
-		gun_velocity = 245,
+		gun_velocity = 45,
 		gun_accuracy = 68,
 		gun_cooldown = 0.35,
 		gun_reload = 1.2/4,
@@ -150,8 +149,7 @@ minetest.register_tool("rangedweapons:scar20_semi_rrr", {
 	minetest.register_tool("rangedweapons:scar20_semi", {
 	stack_max= 1,
 	wield_scale = {x=1.7,y=1.7,z=1.25},
-description = "" ..core.colorize("#35cdff","FN SCAR 20\n")  ..core.colorize("#00FFFF", "Current mode: Semi auto\n") ..core.colorize("#FFFFFF", "Ranged damage: 15\n") ..core.colorize("#FFFFFF", "Accuracy: 95%\n") ..core.colorize("#FFFFFF", "Critical chance: 15%\n") ..core.colorize("#FFFFFF", "Critical efficiency: 2.75x\n") ..core.colorize("#FFFFFF", "Ammunition: .308 winchester rounds\n") ..core.colorize("#FFFFFF", "Reload delay: 1.2\n") ..core.colorize("#FFFFFF", "Clip size: 10\n") ..core.colorize("#FFFFFF", "Rate of fire: 0.50\n") ..core.colorize("#FFFFFF", "Block penetration: 37%\n")
-..core.colorize("#FFFFFF", "penetration: 20%\n") ..core.colorize("#FFFFFF", "Gun type: Marksman rifle\n") ..core.colorize("#FFFFFF", "Bullet velocity: 245\n") ..core.colorize("#FFFFFF", "sneak + reload to switch fire mode"),
+description = "" ..core.colorize("#35cdff","FN Scar 20\n") ..core.colorize("#FFFFFF", "DMG: 15 | Capacity: 10 rounds\n")..core.colorize("#FFFFFF", "Ammo: .308 Winchester | Type: Marksman\n")   ..core.colorize("#FFFFFF", "sneak + reload to switch fire mode - current: Semi auto"),
 	range = 0,
     weapon_zoom=4,
     groups = {not_in_creative_inventory = 1},
@@ -165,7 +163,7 @@ description = "" ..core.colorize("#35cdff","FN SCAR 20\n")  ..core.colorize("#00
 		gun_skill = {"arifle_skill",50},
 		gun_icon = "rangedweapons_scar_icon.png",
 		gun_unloaded = "rangedweapons:scar20_semi_r",
-		gun_velocity = 245,
+		gun_velocity = 55,
 		gun_accuracy = 95,
 		gun_cooldown = 0.50,
 		gun_reload = 1.2/4,

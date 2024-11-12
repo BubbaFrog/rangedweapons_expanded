@@ -48,7 +48,7 @@ minetest.register_tool("rangedweapons:glock18_rrr", {
 
 
 minetest.register_tool("rangedweapons:glock18", {
-		description = "" ..core.colorize("#35cdff","Full auto Glock 18\n") ..core.colorize("#FFFFFF", "Gun damage: 3\n") ..core.colorize("#FFFFFF", "Accuracy: 76%\n") ..core.colorize("#FFFFFF", "Gun Critical chance: 15%\n") ..core.colorize("#FFFFFF", "Gun Critical efficiency: 2.2x\n") ..core.colorize("#FFFFFF", "Reload delay: 0.9\n")..core.colorize("#FFFFFF", "Clip size: 40/40/40\n") ..core.colorize("#FFFFFF", "Ammunition: 9x19mm Parabellum\n") ..core.colorize("#FFFFFF", "Rate of fire: 0.05\n") ..core.colorize("#FFFFFF", "Gun type: Handgun\n") ..core.colorize("#FFFFFF", "Bullet velocity: 230"),
+		description = "" ..core.colorize("#35cdff","Glock 18 | Auto \n") ..core.colorize("#FFFFFF", "DMG: 3 | Capacity: 40 rounds\n")..core.colorize("#FFFFFF", "Ammo: 9x19mm Parabellum | Type: Pistol"),
 	wield_scale = {x=1.8,y=1.8,z=1.2},
 	range = 0,
 	inventory_image = "glock18.png",
@@ -64,7 +64,7 @@ RW_gun_capabilities = {
 		gun_icon = "glock18_icon.png",
 		gun_unloaded = "rangedweapons:glock18_r",
 		gun_cooling = "rangedweapons:glock18_rld",
-		gun_velocity = 230,
+		gun_velocity = 30,
 		gun_accuracy = 96,
 		gun_cooldown = 0.05,
 		gun_reload = 0.9/4,

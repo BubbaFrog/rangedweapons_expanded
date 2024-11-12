@@ -49,8 +49,7 @@ minetest.register_tool("rangedweapons:g36_rld", {
 	minetest.register_tool("rangedweapons:g36", {
 	stack_max= 1,
 	wield_scale = {x=1.75,y=1.75,z=1.3},
-		description = "" ..core.colorize("#35cdff","g36\n") ..core.colorize("#FFFFFF", "Gun damage: 5\n") ..core.colorize("#FFFFFF", "accuracy: 80%\n")  ..core.colorize("#FFFFFF", "Gun Critical chance: 12%\n")..core.colorize("#FFFFFF", "Critical efficiency: 2.9x\n")  ..core.colorize("#FFFFFF", "Reload delay: 1.2\n") ..core.colorize("#FFFFFF", "Clip size: 30\n")   ..core.colorize("#FFFFFF", "Ammunition: 5.56mm rounds\n") ..core.colorize("#FFFFFF", "Rate of fire: 0.08(full-auto)\n") ..core.colorize("#FFFFFF", "Gun type: assault rifle\n") ..core.colorize("#FFFFFF", "Block penetration: 6%\n")
-..core.colorize("#FFFFFF", "Enemy penetration: 17%\n") ..core.colorize("#FFFFFF", "Bullet velocity: 240"),
+		description = "" ..core.colorize("#35cdff","G36\n") ..core.colorize("#FFFFFF", "DMG: 5 | Capacity: 30 rounds\n")..core.colorize("#FFFFFF", "Ammo: 5.56mm | Type: Assault rifle"),
 	range = 0,
 	inventory_image = "rangedweapons_g36.png",
 	RW_gun_capabilities = {
@@ -65,7 +64,7 @@ minetest.register_tool("rangedweapons:g36_rld", {
 		gun_icon = "rangedweapons_g36_icon.png",
 		gun_unloaded = "rangedweapons:g36_r",
         gun_cooling="rangedweapons:g36_rld",
-		gun_velocity = 240,
+		gun_velocity = 40,
 		gun_accuracy = 80,
 		gun_cooldown = 0.08,
 		gun_reload = 1.2/4,

@@ -553,7 +553,7 @@ end
 
 local combined_crit = gun_crit + bullet_crit
 local combined_critEffc = gun_critEffc + bullet_critEffc
-local combined_velocity = gun_velocity/7 + bullet_velocity
+local combined_velocity = gun_velocity/2 + bullet_velocity
 local combined_projNum = math.ceil(gun_projectiles * bullet_projMult)
 local combined_mobPen = gun_mobPen + bullet_mobPen
 local combined_nodePen = gun_nodePen + bullet_nodePen
@@ -782,6 +782,7 @@ local spawnpos_z = pos.z + (math.random(-rndacc,rndacc)/100)
 obj:set_properties(
 {textures = {texture},
 visual = visualType,
+visual_size = {x=0.3, y=0.3},
 collisionbox = {-size,-size,-size, size,size,size},
 glow = proj_glow,}
 )

@@ -3,7 +3,7 @@ minetest.register_tool("rangedweapons:m1_uld", {
 	stack_max= 1,
 	wield_scale = {x=1.9,y=1.9,z=1.1},
 	range = 0,
-		description = "" ..core.colorize("#35cdff","M1 Garand \n") ..core.colorize("#FFFFFF", "Ranged damage: 9 \n")..core.colorize("#FFFFFF", "Accuracy: 80%\n") ..core.colorize("#FFFFFF", "knockback: 6\n") ..core.colorize("#FFFFFF", "Critical chance: 30%\n") ..core.colorize("#FFFFFF", "Critical efficiency: x3\n") ..core.colorize("#FFFFFF", "Ammunition: 7.62mm round\n") ..core.colorize("#FFFFFF", "Rate of fire: 1.0\n") ..core.colorize("#FFFFFF", "Reload time: 2.0\n") ..core.colorize("#FFFFFF", "Zoom: 10x\n") ..core.colorize("#be0d00", "Right-click to eject empty bullet shell\n") ..core.colorize("#FFFFFF", "Clip size: 8\n") ..core.colorize("#FFFFFF", "Enemy penetration:30%\n") ..core.colorize("#FFFFFF", "Block penetration:10%\n") ..core.colorize("#FFFFFF", "Gun type: Rifle\n") ..core.colorize("#FFFFFF", "Bullet velocity: 75"),
+		description = "" ..core.colorize("#35cdff","M1 garand\n") ..core.colorize("#FFFFFF", "DMG: 9 | Capacity: 8 rounds\n")..core.colorize("#FFFFFF", "Ammo: .30-06 springfield | Type: Rifle"),
 	groups = {not_in_creative_inventory = 1},
 	inventory_image = "m1.png",
 	weapon_zoom = 9,
@@ -59,8 +59,7 @@ minetest.register_tool("rangedweapons:m1_rld", {
 
 
 minetest.register_tool("rangedweapons:m1", {
-		description = "" ..core.colorize("#35cdff","M1 Garand \n") ..core.colorize("#FFFFFF", "Ranged damage:9 \n")..core.colorize("#FFFFFF", "Accuracy: 80%\n")
- ..core.colorize("#FFFFFF", "Critical chance: 30%\n") ..core.colorize("#FFFFFF", "Critical efficiency: x3\n") ..core.colorize("#FFFFFF", "Ammunition: .30-06 springfield round\n") ..core.colorize("#FFFFFF", "Rate of fire: 1.0\n") ..core.colorize("#FFFFFF", "Reload time: 2.0\n") ..core.colorize("#FFFFFF", "Zoom: 10x\n") ..core.colorize("#27a600", "The gun is loaded!\n") ..core.colorize("#FFFFFF", "Clip size: 8\n") ..core.colorize("#FFFFFF", "Enemy penetration:30%\n") ..core.colorize("#FFFFFF", "Block penetration:10%\n") ..core.colorize("#FFFFFF", "Gun type: Rifle\n") ..core.colorize("#FFFFFF", "Bullet velocity: 275"),
+		description = "" ..core.colorize("#35cdff","M1 garand\n") ..core.colorize("#FFFFFF", "DMG: 9 | Capacity: 8 rounds\n")..core.colorize("#FFFFFF", "Ammo: .30-06 springfield | Type: Rifle"),
 	range = 0,
 	wield_scale = {x=1.9,y=1.9,z=1.1},
 	inventory_image = "m1.png",
@@ -75,7 +74,7 @@ RW_gun_capabilities = {
 		gun_icon = "m1_icon.png",
 		gun_unloaded = "rangedweapons:m1_r",
 	--	gun_cooling = "rangedweapons:m1_uld",
-		gun_velocity = 275,
+		gun_velocity = 55,
 		gun_accuracy = 100,
 		gun_cooldown = 0.5,
 		gun_reload = 2.0/4,

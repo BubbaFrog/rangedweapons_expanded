@@ -4,8 +4,7 @@ minetest.register_tool("rangedweapons:kar98k_uld", {
 	stack_max= 1,
 	wield_scale = {x=1.9,y=1.9,z=1.1},
 	range = 0,
-		description = "" ..core.colorize("#35cdff","Karabiner 98 Kurz \n") ..core.colorize("#FFFFFF", "Ranged damage:10\n")..core.colorize("#FFFFFF", "Accuracy: 97%\n") ..core.colorize("#FFFFFF", "knockback: 15\n") ..core.colorize("#FFFFFF", "Critical chance: 21%\n") ..core.colorize("#FFFFFF", "Critical efficiency: x2\n") ..core.colorize("#FFFFFF", "Ammunition: 7.62mm round\n") ..core.colorize("#FFFFFF", "Rate of fire: 0.5\n") ..core.colorize("#FFFFFF", "Reload time: 2.0\n") ..core.colorize("#be0d00", "Right-click to eject empty bullet shell\n") ..core.colorize("#FFFFFF", "Clip size: 5\n") ..core.colorize("#FFFFFF", "Enemy penetration:30%\n") ..core.colorize("#FFFFFF", "Block penetration:10%\n") ..core.colorize("#FFFFFF", "Gun type: Rifle\n") ..core.colorize("#FFFFFF", "Bullet velocity: 85"),
-	groups = {not_in_creative_inventory = 1},
+		description = "" ..core.colorize("#35cdff","Karabiner 98 kurz\n") ..core.colorize("#FFFFFF", "DMG: 12 | Capacity: 5 rounds\n")..core.colorize("#FFFFFF", "Ammo: 7.62mm | Type: Rifle"),
 	inventory_image = "kar98k.png",
 	on_use = function(user)
 		minetest.sound_play("rangedweapons_empty", {user})
@@ -59,7 +58,7 @@ minetest.register_tool("rangedweapons:kar98k_rld", {
 
 
 minetest.register_tool("rangedweapons:kar98k", {
-			description = "" ..core.colorize("#35cdff","Karabiner 98 Kurz \n") ..core.colorize("#FFFFFF", "Ranged damage:12\n")..core.colorize("#FFFFFF", "Accuracy: 97%\n") ..core.colorize("#FFFFFF", "Critical chance: 21%\n") ..core.colorize("#FFFFFF", "Critical efficiency: x2\n") ..core.colorize("#FFFFFF", "Ammunition: 7.62mm round\n") ..core.colorize("#FFFFFF", "Rate of fire: 0.5\n") ..core.colorize("#FFFFFF", "Reload time: 2.0\n") ..core.colorize("#27a600", "The gun is loaded!\n") ..core.colorize("#FFFFFF", "Clip size: 5\n") ..core.colorize("#FFFFFF", "Enemy penetration:30%\n") ..core.colorize("#FFFFFF", "Block penetration:10%\n") ..core.colorize("#FFFFFF", "Gun type: Rifle\n") ..core.colorize("#FFFFFF", "Bullet velocity: 285"),
+		description = "" ..core.colorize("#35cdff","Karabiner 98 kurz\n") ..core.colorize("#FFFFFF", "DMG: 12 | Capacity: 5 rounds\n")..core.colorize("#FFFFFF", "Ammo: 7.62mm | Type: Rifle"),
 	range = 0,
 	wield_scale = {x=1.9,y=1.9,z=1.1},
 	inventory_image = "kar98k.png",
@@ -73,7 +72,7 @@ RW_gun_capabilities = {
 		gun_icon = "kar98k_icon.png",
 		gun_unloaded = "rangedweapons:kar98k_r",
 		gun_cooling = "rangedweapons:kar98k_uld",
-		gun_velocity = 285,
+		gun_velocity = 55,
 		gun_accuracy = 97,
 		gun_cooldown = 0.1,
 		gun_reload = 1.8/4,

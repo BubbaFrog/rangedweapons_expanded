@@ -11,7 +11,7 @@ minetest.register_tool("rangedweapons:milkor_rld", {
 
 
 minetest.register_tool("rangedweapons:milkor", {
-		description = "" ..core.colorize("#35cdff","Milkor MGL\n") ..core.colorize("#FFFFFF", "Direct contact damage: 15\n")..core.colorize("#FFFFFF", "Accuracy: 96%\n") ..core.colorize("#FFFFFF", "Critical chance: 9%\n") ..core.colorize("#FFFFFF", "Critical efficiency: 3.0x\n") ..core.colorize("#FFFFFF", "Ammunition: 40mm grenades\n") ..core.colorize("#FFFFFF", "Reload time: 0.75\n") ..core.colorize("#FFFFFF", "Rate of fire: 0.35\n") ..core.colorize("#FFFFFF", "Gun gravity: 7\n") ..core.colorize("#FFFFFF", "Clip Size: 6\n")..core.colorize("#FFFFFF", "Gun type: grenade launcher\n") ..core.colorize("#FFFFFF", "Bullet velocity: 20"),
+		description = "" ..core.colorize("#35cdff","Milkor MGL\n") ..core.colorize("#FFFFFF", "DMG: 15 by direct contact | Capacity: 6 rounds\n")..core.colorize("#FFFFFF", "Ammo: 40mm grenade | Type: Grenade launcher"),
 	range = 0,
 	wield_scale = {x=1.75,y=1.75,z=2.0},
 	inventory_image = "rangedweapons_milkor.png",

@@ -48,7 +48,7 @@ minetest.register_tool("rangedweapons:fiveseven_rrr", {
 
 
 minetest.register_tool("rangedweapons:fiveseven", {
-		description = "" ..core.colorize("#35cdff","FN Five-seveN\n") ..core.colorize("#FFFFFF", "Gun damage: 7\n") ..core.colorize("#FFFFFF", "Accuracy: 95%\n")  ..core.colorize("#FFFFFF", "Gun Critical chance: 12%\n") ..core.colorize("#FFFFFF", "Gun Critical efficiency: 2.9x\n") ..core.colorize("#FFFFFF", "Reload delay: 0.9\n")..core.colorize("#FFFFFF", "Clip size: 20\n") ..core.colorize("#FFFFFF", "Ammunition: FN 5.7x28mm\n") ..core.colorize("#FFFFFF", "Rate of fire: 0.11\n") ..core.colorize("#FFFFFF", "Gun type: Handgun\n") ..core.colorize("#FFFFFF", "Bullet velocity: 240"),
+		description = "" ..core.colorize("#35cdff","FN Five-seveN\n") ..core.colorize("#FFFFFF", "DMG: 7 | Capacity: 20 rounds\n")..core.colorize("#FFFFFF", "Ammo: 5.7x28mm | Type: Pistol"),
 	wield_scale = {x=1.2,y=1.2,z=1.2},
 	range = 0,
 	inventory_image = "five-seven.png",
@@ -64,7 +64,7 @@ RW_gun_capabilities = {
 		gun_icon = "five-seven_icon.png",
 		gun_unloaded = "rangedweapons:fiveseven_r",
 		gun_cooling = "rangedweapons:fiveseven_rld",
-		gun_velocity = 230,
+		gun_velocity = 30,
 		gun_accuracy = 96,
 		gun_cooldown = 0.1,
 		gun_reload = 0.9/4,

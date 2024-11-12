@@ -21,7 +21,7 @@ minetest.register_tool("rangedweapons:benelli_rlding", {
 })
 
 minetest.register_tool("rangedweapons:benelli", {
-		description = "" ..core.colorize("#35cdff","benelli m3\n") ..core.colorize("#FFFFFF", "Ranged damage: 4/pellet\n") ..core.colorize("#FFFFFF", "projectiles: 4\n") ..core.colorize("#FFFFFF", "Gun gravity: 0.5\n") ..core.colorize("#FFFFFF", "Accuracy: 58%\n") ..core.colorize("#FFFFFF", "Critical chance: 6%\n") ..core.colorize("#FFFFFF", "Critical efficiency: 2.0x\n") ..core.colorize("#FFFFFF", "Ammunition: 12 gauge shells\n") ..core.colorize("#FFFFFF", "Pump delay: 0.6\n")..core.colorize("#FFFFFF", "Clip size: 7\n") ..core.colorize("#27a600", "Gun is ready to fire!\n") ..core.colorize("#fff21c", "Right-click to load in a bullet!\n")  ..core.colorize("#FFFFFF", "Gun type: shotgun\n") ..core.colorize("#FFFFFF", "Bullet velocity: 226"),
+		description = "" ..core.colorize("#35cdff","Benelli M3\n") ..core.colorize("#FFFFFF", "DMG: 4x4 | Capacity: 7 rounds\n")..core.colorize("#FFFFFF", "Ammo:  12 gauge | Type: shotgun"),
 	range = 0,
 	wield_scale = {x=1.9,y=1.9,z=1.1},
 	inventory_image = "rangedweapons_benelli.png",
@@ -35,7 +35,7 @@ RW_gun_capabilities = {
 		gun_icon = "rangedweapons_benelli_icon.png",
 		gun_unloaded = "rangedweapons:benelli_rld",
 		gun_cooling = "rangedweapons:benelli_uld",
-		gun_velocity = 226,
+		gun_velocity = 36,
 		gun_accuracy = 58,
 		gun_cooldown = 0.6,
 		gun_gravity = 0.4,
@@ -62,7 +62,7 @@ minetest.register_tool("rangedweapons:benelli_uld", {
 	stack_max= 1,
 	wield_scale = {x=1.9,y=1.9,z=1.1},
 	range = 0,
-		description = "" ..core.colorize("#35cdff","benelli m3\n") ..core.colorize("#FFFFFF", "Ranged damage: 4/pellet\n") ..core.colorize("#FFFFFF", "projectiles: 4\n") ..core.colorize("#FFFFFF", "Gun gravity: 0.5\n") ..core.colorize("#FFFFFF", "Accuracy: 58%\n") ..core.colorize("#FFFFFF", "Critical chance: 6%\n") ..core.colorize("#FFFFFF", "Critical efficiency: 2.0x\n") ..core.colorize("#FFFFFF", "Ammunition: 12 gauge shells\n") ..core.colorize("#FFFFFF", "Pump delay: 0.6\n")..core.colorize("#FFFFFF", "Clip size: 7\n") ..core.colorize("#be0d00", "Right-click, to eject the empty shell!\n") ..core.colorize("#fff21c", "Right-click to load in a bullet!\n")  ..core.colorize("#FFFFFF", "Gun type: shotgun\n") ..core.colorize("#FFFFFF", "Bullet velocity: 226"),
+		description = "" ..core.colorize("#35cdff","Benelli M3\n") ..core.colorize("#FFFFFF", "DMG: 4x4 | Capacity: 7 rounds\n")..core.colorize("#FFFFFF", "Ammo:  12 gauge | Type: shotgun"),
 	inventory_image = "rangedweapons_benelli.png",
 	groups = {not_in_creative_inventory = 1},
 	on_use = function(user)

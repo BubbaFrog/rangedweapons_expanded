@@ -21,8 +21,7 @@ minetest.register_tool("rangedweapons:dragoon_r", {
 
 
 minetest.register_tool("rangedweapons:dragoon", {
-		description = "" ..core.colorize("#35cdff","Colt dragoon Revolver \n") ..core.colorize("#FFFFFF", "Ranged damage: 14\n")..core.colorize("#FFFFFF", "Accuracy: 87%\n") ..core.colorize("#FFFFFF", "Critical chance: 22%\n") ..core.colorize("#FFFFFF", "Critical efficiency: 3.1x\n") ..core.colorize("#FFFFFF", "Ammunition: .44 Lead balls and black powder\n") ..core.colorize("#FFFFFF", "Reload time: 1.25\n") ..core.colorize("#FFFFFF", "Clip Size: 6\n") ..core.colorize("#FFFFFF", "Block penetration: 8%\n")
-..core.colorize("#FFFFFF", "penetration: 24%\n") ..core.colorize("#FFFFFF", "Gun type: Revolver\n") ..core.colorize("#FFFFFF", "Bullet velocity: 255"),
+		description = "" ..core.colorize("#35cdff","Colt Dragoon\n") ..core.colorize("#FFFFFF", "DMG: 14 | Capacity: 6 rounds\n")..core.colorize("#FFFFFF", "Ammo: .44 lead balls | Type: revolver"),
 	range = 0,
 	wield_scale = {x=1.25,y=1.25,z=1.1},
 	inventory_image = "dragoon.png",
@@ -36,7 +35,7 @@ RW_gun_capabilities = {
 		gun_icon = "dragoon_icon.png",
 		gun_unloaded = "rangedweapons:dragoon",
 		gun_cooling = "rangedweapons:dragoon_rld",
-		gun_velocity = 255,
+		gun_velocity = 55,
 		gun_accuracy = 87,
 		gun_cooldown = 1.2,
 		gun_reload = 2.4,

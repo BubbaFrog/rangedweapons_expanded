@@ -13,8 +13,7 @@ minetest.register_tool("rangedweapons:m60_r", {
 	minetest.register_tool("rangedweapons:m60", {
 	stack_max= 1,
 	wield_scale = {x=2.0,y=2.0,z=1.4},
-		description = "" ..core.colorize("#35cdff","m60\n") ..core.colorize("#FFFFFF", "Gun damage: 7\n") ..core.colorize("#FFFFFF", "accuracy: 65%\n")  ..core.colorize("#FFFFFF", "Gun Critical chance: 13%\n")..core.colorize("#FFFFFF", "Critical efficiency: 3.0x\n")  ..core.colorize("#FFFFFF", "Reload delay: 1.0\n") ..core.colorize("#FFFFFF", "Clip size: 100\n")   ..core.colorize("#FFFFFF", "Ammunition: 7.62mm rounds\n") ..core.colorize("#FFFFFF", "Rate of fire: 0.09(full-auto)\n") ..core.colorize("#FFFFFF", "Gun type: heavy machinegun\n") ..core.colorize("#FFFFFF", "Block penetration: 12%\n")
-..core.colorize("#FFFFFF", "Enemy penetration: 27%\n") ..core.colorize("#FFFFFF", "Bullet velocity: 264"),
+		description = "" ..core.colorize("#35cdff","M60\n") ..core.colorize("#FFFFFF", "DMG: 7 | Capacity: 100 rounds\n")..core.colorize("#FFFFFF", "Ammo: 7.62mm | Type: Machine gun"),
 	range = 0,
 	inventory_image = "rangedweapons_m60.png",
 	RW_gun_capabilities = {
@@ -27,7 +26,7 @@ minetest.register_tool("rangedweapons:m60_r", {
 		gun_skill = {"heavy_skill",60},
 		gun_icon = "rangedweapons_m60_icon.png",
 		gun_unloaded = "rangedweapons:m60_r",
-		gun_velocity = 264,
+		gun_velocity = 44,
 		gun_accuracy = 65,
 		gun_cooldown = 0.09,
 		gun_reload = 1.0,

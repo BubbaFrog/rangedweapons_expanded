@@ -11,7 +11,7 @@ minetest.register_tool("rangedweapons:m79_r", {
 })
 
 minetest.register_tool("rangedweapons:m79", {
-		description = "" ..core.colorize("#35cdff","m79\n") ..core.colorize("#FFFFFF", "Direct contact damage: 10\n")..core.colorize("#FFFFFF", "Accuracy: 92%\n") ..core.colorize("#FFFFFF", "Gun crit chance: 8%\n")..core.colorize("#FFFFFF", "Critical efficiency: 3x\n") ..core.colorize("#FFFFFF", "Reload delay: 0.9\n")..core.colorize("#FFFFFF", "Clip size: 1\n") ..core.colorize("#FFFFFF", "Gun gravity: 5\n")..core.colorize("#FFFFFF", "Ammunition: 40mm grenades\n")..core.colorize("#FFFFFF", "Gun type: grenade launcher\n") ..core.colorize("#FFFFFF", "Bullet velocity: 20"),
+		description = "" ..core.colorize("#35cdff","M79\n") ..core.colorize("#FFFFFF", "DMG:10 by direct contact | Capacity: 1 round\n")..core.colorize("#FFFFFF", "Ammo: 40mm grenade | Type: Grenade launcher"),
 	range = 0,
 	wield_scale = {x=2.0,y=2.0,z=2.5},
 	inventory_image = "rangedweapons_m79.png",

@@ -45,7 +45,7 @@ minetest.register_tool("rangedweapons:mp40_rld", {
 	minetest.register_tool("rangedweapons:mp40", {
 	stack_max= 1,
 	wield_scale = {x=1.75,y=1.75,z=1.5},
-		description = "" ..core.colorize("#35cdff","MP-40\n") ..core.colorize("#FFFFFF", "Ranged damage: 6\n") ..core.colorize("#FFFFFF", "accuracy: 75%\n")  ..core.colorize("#FFFFFF", "Critical chance: 8%\n") ..core.colorize("#FFFFFF", "Critical efficiency: 2x\n")  ..core.colorize("#FFFFFF", "Ammunition: 9x19mm parabellum\n") ..core.colorize("#FFFFFF", "Clip size: 32\n") ..core.colorize("#FFFFFF", "Reload delay: 1.3\n") ..core.colorize("#FFFFFF", "Rate of fire: 0.13\n") ..core.colorize("#FFFFFF", "Gun type: sub-machinegun\n") ..core.colorize("#FFFFFF", "Bullet velocity: 225"),
+		description = "" ..core.colorize("#35cdff","MP-40\n") ..core.colorize("#FFFFFF", "DMG: 6 | Capacity: 32 rounds\n")..core.colorize("#FFFFFF", "Ammo: 9x19mm Parabellum | Type: SMG"),
 	range = 0,
 	inventory_image = "rangedweapons_mp40_b.png",
 	RW_gun_capabilities = {
@@ -60,7 +60,7 @@ minetest.register_tool("rangedweapons:mp40_rld", {
 		gun_icon = "rangedweapons_mp40_icon.png",
 		gun_unloaded = "rangedweapons:mp40_r",
         gun_cooling="rangedweapons:mp40_rld",
-		gun_velocity = 225,
+		gun_velocity = 35,
 		gun_accuracy = 75,
 		gun_cooldown = 0.13,
 		gun_reload = 1.3/4,

@@ -1,5 +1,5 @@
 minetest.register_tool("rangedweapons:rpg_rld", {
-		description = "" ..core.colorize("#35cdff","rpg7\n") ..core.colorize("#FFFFFF", "Direct contact damage: 20\n")..core.colorize("#FFFFFF", "Accuracy: 100%\n") ..core.colorize("#FFFFFF", "Gun crit chance: 10%\n")..core.colorize("#FFFFFF", "Critical efficiency: 3x\n") ..core.colorize("#FFFFFF", "Reload delay: 1.0\n")..core.colorize("#FFFFFF", "Clip size: 1\n") ..core.colorize("#FFFFFF", "Gun gravity: 5\n")..core.colorize("#FFFFFF", "Ammunition: rockets\n")..core.colorize("#FFFFFF", "Gun type: rocket launcher\n") ..core.colorize("#FFFFFF", "Bullet velocity: 225"),
+description = "" ..core.colorize("#35cdff","RPG-7\n") ..core.colorize("#FFFFFF", "DMG: 20 by direct contact | Capacity: 1 round\n")..core.colorize("#FFFFFF", "Ammo: rocket | Type: Rocket launcher"),
 	range = 0,
 	wield_scale = {x=2.5,y=2.5,z=3.75},
 	groups = {not_in_creative_inventory = 1},
@@ -34,7 +34,7 @@ return itemstack
 })
 
 minetest.register_tool("rangedweapons:rpg", {
-		description = "" ..core.colorize("#35cdff","rpg7\n") ..core.colorize("#FFFFFF", "Direct contact damage: 20\n")..core.colorize("#FFFFFF", "Accuracy: 100%\n") ..core.colorize("#FFFFFF", "Gun crit chance: 10%\n")..core.colorize("#FFFFFF", "Critical efficiency: 3x\n") ..core.colorize("#FFFFFF", "Reload delay: 1.0\n")..core.colorize("#FFFFFF", "Clip size: 1\n") ..core.colorize("#FFFFFF", "Gun gravity: 5\n")..core.colorize("#FFFFFF", "Ammunition: rockets\n")..core.colorize("#FFFFFF", "Gun type: rocket launcher\n") ..core.colorize("#FFFFFF", "Bullet velocity: 225"),
+		description = "" ..core.colorize("#35cdff","RPG-7\n") ..core.colorize("#FFFFFF", "DMG: 20 by direct contact | Capacity: 1 round\n")..core.colorize("#FFFFFF", "Ammo: rocket | Type: Rocket launcher"),
 	range = 0,
 	wield_scale = {x=2.5,y=2.5,z=3.75},
 	inventory_image = "rangedweapons_rpg.png",
@@ -48,7 +48,7 @@ minetest.register_tool("rangedweapons:rpg", {
 		gun_icon = "rangedweapons_rpg_icon.png",
 		gun_unloaded = "rangedweapons:rpg_rld",
 		gun_cooling = "rangedweapons:rpg",
-		gun_velocity = 225,
+		gun_velocity = 25,
 		gun_accuracy = 100,
 		gun_cooldown = 1.0,
 		gun_reload = 1.0,

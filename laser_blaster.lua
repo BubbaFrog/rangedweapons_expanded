@@ -1,7 +1,7 @@
 	minetest.register_tool("rangedweapons:laser_blaster", {
 	stack_max= 1,
 	wield_scale = {x=1.15,y=1.15,z=1.15},
-		description = "" ..core.colorize("#35cdff","AEP7 laser pistol\n") ..core.colorize("#FFFFFF", "Ranged damage: 12\n") ..core.colorize("#FFFFFF", "accuracy: 100%\n") ..core.colorize("#FFFFFF", "Critical chance: 10%\n") ..core.colorize("#FFFFFF", "Critical efficiency: 2.0x\n")  ..core.colorize("#FFFFFF", "Power usage: 10\n") ..core.colorize("#FFFFFF", "Rate of fire: 0.3\n") ..core.colorize("#FFFFFF", "Enemy penetration: 50%\n") ..core.colorize("#FFFFFF", "Gun type: laser gun\n") ..core.colorize("#FFFFFF", "Bullet velocity: 75"),
+		description = "" ..core.colorize("#35cdff","Laser blaster\n") ..core.colorize("#FFFFFF", "DMG: 12 \n")..core.colorize("#FFFFFF", "Ammo: microfusion cells (10) | Type: Laser weapon"),
 	range = 0,
     groups={not_in_creative_inventory=1},
 	inventory_image = "laser_pistol.png",
@@ -11,7 +11,7 @@ RW_powergun_capabilities = {
 		power_critEffc = 2.0,
 		power_skill = {"",1},
 		power_cooling = "rangedweapons:laser_blaster",
-		power_velocity = 75,
+		power_velocity = 55,
 		power_accuracy = 100,
 		power_cooldown = 0.3,
 		power_projectiles = 1,

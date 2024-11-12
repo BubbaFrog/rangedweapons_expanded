@@ -41,7 +41,7 @@ minetest.register_tool("rangedweapons:g11_rld", {
 -----------------gun--------------
 
 minetest.register_tool("rangedweapons:g11", {
-		description = "" ..core.colorize("#35cdff","Heckler & Koch G11\n") ..core.colorize("#FFFFFF", "Ranged damage: 4\n")..core.colorize("#FFFFFF", "Accuracy: 95%\n") ..core.colorize("#FFFFFF", "Critical chance: 20%\n") ..core.colorize("#FFFFFF", "Critical efficiency: 2x\n") ..core.colorize("#FFFFFF", "Ammunition: 4.7mm Caseless\n")..core.colorize("#FFFFFF", "Reload delay: 1.0\n")..core.colorize("#FFFFFF", "Clip size: 45\n") ..core.colorize("#FFFFFF", "Rate of fire: 0.05\n") ..core.colorize("#FFFFFF", "Gun type: Rifle\n") ..core.colorize("#FFFFFF", "Bullet velocity: 220"),
+		description = "" ..core.colorize("#35cdff","HK G11\n") ..core.colorize("#FFFFFF", "DMG: 4 | Capacity: 45 rounds\n")..core.colorize("#FFFFFF", "Ammo: 4.7mm caseless | Type: Assault rifle"),
 	range = 0,
     weapon_zoom = 9,
 	wield_scale = {x=0.9,y=0.9,z=1.0},
@@ -58,7 +58,7 @@ minetest.register_tool("rangedweapons:g11", {
 		gun_icon = "g11_icon.png",
 		gun_unloaded = "rangedweapons:g11_r",
         gun_cooling = "rangedweapons:g11",
-		gun_velocity = 220,
+		gun_velocity = 30,
 		gun_accuracy = 95,
 		gun_cooldown = 0.05,
 		gun_reload = 6.0/4,

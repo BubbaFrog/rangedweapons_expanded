@@ -41,7 +41,7 @@ minetest.register_tool("rangedweapons:luger_rld", {
 -----------------gun--------------
 
 minetest.register_tool("rangedweapons:luger", {
-		description = "" ..core.colorize("#35cdff","Luger P08\n") ..core.colorize("#FFFFFF", "Ranged damage: 6\n")..core.colorize("#FFFFFF", "Accuracy: 92%\n") ..core.colorize("#FFFFFF", "Critical chance: 10%\n") ..core.colorize("#FFFFFF", "Critical efficiency: 2x\n") ..core.colorize("#FFFFFF", "Ammunition: 9x19mm parabellum\n")..core.colorize("#FFFFFF", "Reload delay: 1.0\n")..core.colorize("#FFFFFF", "Clip size: 8\n") ..core.colorize("#FFFFFF", "Rate of fire: 0.1\n") ..core.colorize("#FFFFFF", "Gun type: Handgun\n") ..core.colorize("#FFFFFF", "Bullet velocity: 220"),
+		description = "" ..core.colorize("#35cdff","Luger P08\n") ..core.colorize("#FFFFFF", "DMG: 6 | Capacity: 8 rounds\n")..core.colorize("#FFFFFF", "Ammo: 9x19mm Parabellum | Type: Pistol"),
 	range = 0,
 	wield_scale = {x=0.9,y=0.9,z=1.0},
 	inventory_image = "rangedweapons_luger.png",
@@ -56,7 +56,7 @@ minetest.register_tool("rangedweapons:luger", {
 		gun_icon = "rangedweapons_luger_icon.png",
 		gun_unloaded = "rangedweapons:luger_r",
 		gun_cooling = "rangedweapons:luger_rld",
-		gun_velocity = 220,
+		gun_velocity = 30,
 		gun_accuracy = 92,
 		gun_cooldown = 0.1,
 		gun_reload = 1.0/4,

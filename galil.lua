@@ -47,8 +47,7 @@ minetest.register_tool("rangedweapons:galil_rld", {
 	minetest.register_tool("rangedweapons:galil", {
 	stack_max= 1,
 	wield_scale = {x=1.75,y=1.75,z=1.3},
-		description = "" ..core.colorize("#35cdff","Galil ARM\n") ..core.colorize("#FFFFFF", "Gun damage: 5\n") ..core.colorize("#FFFFFF", "accuracy: 79%\n")  ..core.colorize("#FFFFFF", "Gun Critical chance: 5%\n")..core.colorize("#FFFFFF", "Critical efficiency: 3.2x\n")  ..core.colorize("#FFFFFF", "Reload delay: 2\n") ..core.colorize("#FFFFFF", "Clip size: 25/35\n")   ..core.colorize("#FFFFFF", "Ammunition: 7.62mm rounds, 5.56mm rounds\n") ..core.colorize("#FFFFFF", "Rate of fire: 0.11(full-auto)\n") ..core.colorize("#FFFFFF", "Gun type: assault rifle\n") ..core.colorize("#FFFFFF", "Block penetration: 5%\n")
-..core.colorize("#FFFFFF", "Enemy penetration: 15%\n") ..core.colorize("#FFFFFF", "Bullet velocity: 230"),
+		description = "" ..core.colorize("#35cdff","IMI Galil ARM\n") ..core.colorize("#FFFFFF", "DMG:  5 | Capacity: 25/35 rounds\n")..core.colorize("#FFFFFF", "Ammo: 7.62mm/5.56mm | Type: Assault rifle"),
 	range = 0,
 	inventory_image = "rangedweapons_ak47.png",
 	RW_gun_capabilities = {
@@ -63,7 +62,7 @@ minetest.register_tool("rangedweapons:galil_rld", {
 		gun_icon = "galil_icon.png",
 		gun_unloaded = "rangedweapons:galil_r",
         gun_cooling="rangedweapons:galil_rld",
-		gun_velocity = 230,
+		gun_velocity = 40,
 		gun_accuracy = 79,
 		gun_cooldown = 0.11,
 		gun_reload = 2/4,

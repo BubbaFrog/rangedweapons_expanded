@@ -53,7 +53,7 @@ minetest.register_tool("rangedweapons:tmp_rld", {
 	minetest.register_tool("rangedweapons:tmp", {
 	stack_max= 1,
 	wield_scale = {x=1.15,y=1.15,z=1.15},
-		description = "" ..core.colorize("#35cdff","Steyr T.M.P.\n") ..core.colorize("#FFFFFF", "Gun damage: 5\n") ..core.colorize("#FFFFFF", "accuracy: 64%\n")  ..core.colorize("#FFFFFF", "Gun Critical chance: 4%\n")..core.colorize("#FFFFFF", "Critical efficiency: 1.85x\n")   ..core.colorize("#FFFFFF", "Reload delay: 1.0\n") ..core.colorize("#FFFFFF", "Clip size: 30\n")   ..core.colorize("#FFFFFF", "Ammunition: 9x19mm parabellum\n") ..core.colorize("#FFFFFF", "Rate of fire: 0.066(full-auto)\n") ..core.colorize("#FFFFFF", "Gun type: machine pistol\n") ..core.colorize("#FFFFFF", "Bullet velocity: 220"),
+description = "" ..core.colorize("#35cdff","Steyr TMP\n") ..core.colorize("#FFFFFF", "DMG: 5 | Capacity: 30 rounds\n")..core.colorize("#FFFFFF", "Ammo: 9x19mm Parabellum | Type: SMG"),
 	range = 0,
 	inventory_image = "rangedweapons_tmp.png",
 	RW_gun_capabilities = {
@@ -68,7 +68,7 @@ minetest.register_tool("rangedweapons:tmp_rld", {
 		gun_icon = "rangedweapons_tmp_icon.png",
 		gun_unloaded = "rangedweapons:tmp_r",
         gun_cooling="rangedweapons:tmp_rld",
-		gun_velocity = 220,
+		gun_velocity = 30,
 		gun_accuracy = 64,
 		gun_cooldown = 0.066,
 		gun_reload = 1.0/4,

@@ -36,7 +36,7 @@ minetest.register_tool("rangedweapons:ump_rrr", {
 	minetest.register_tool("rangedweapons:ump", {
 	stack_max= 1,
 	wield_scale = {x=1.9,y=1.9,z=1.25},
-		description = "" ..core.colorize("#35cdff","UMP-9\n") ..core.colorize("#FFFFFF", "Ranged damage: 5\n") ..core.colorize("#FFFFFF", "accuracy: 79%\n") ..core.colorize("#FFFFFF", "Reload delay: 1.25\n")  ..core.colorize("#FFFFFF", "Clip size: 25/25\n") ..core.colorize("#FFFFFF", "Critical chance: 9%\n") ..core.colorize("#FFFFFF", "Critical efficiency: 2.0x\n")  ..core.colorize("#FFFFFF", "Ammunition: 9x19mm parabellum/.45acp\n") ..core.colorize("#FFFFFF", "Rate of fire: 0.115 (full-auto)\n") ..core.colorize("#FFFFFF", "Gun type: smg\n") ..core.colorize("#FFFFFF", "Bullet velocity: 232"),
+description = "" ..core.colorize("#35cdff","UMP-10\n") ..core.colorize("#FFFFFF", "DMG: 5 | Capacity: 25 rounds\n")..core.colorize("#FFFFFF", "Ammo: .45 ACP/9x19mm Parabellum | Type: SMG"),
 	range = 0,
 	inventory_image = "rangedweapons_ump.png",
 	RW_gun_capabilities = {
@@ -50,7 +50,7 @@ minetest.register_tool("rangedweapons:ump_rrr", {
 		gun_magazine = "rangedweapons:machinepistol_mag",
 		gun_icon = "rangedweapons_ump_icon.png",
 		gun_unloaded = "rangedweapons:ump_r",
-		gun_velocity = 232,
+		gun_velocity = 32,
 		gun_accuracy = 79,
 		gun_cooldown = 0.115,
 		gun_reload = 1.25/4,

@@ -48,7 +48,7 @@ minetest.register_tool("rangedweapons:aa12_rld", {
 	minetest.register_tool("rangedweapons:aa12", {
 	stack_max= 1,
 	wield_scale = {x=1.9,y=1.9,z=1.4},
-		description = "" ..core.colorize("#35cdff","AA-12\n") ..core.colorize("#FFFFFF", "Ranged damage: 3/pellet\n") ..core.colorize("#FFFFFF", "projectiles: 5\n") ..core.colorize("#FFFFFF", "Gun gravity: 0.5\n") ..core.colorize("#FFFFFF", "accuracy: 60%\n") ..core.colorize("#FFFFFF", "Reload delay: 1.5\n")  ..core.colorize("#FFFFFF", "Clip size: 20\n") ..core.colorize("#FFFFFF", "Critical chance: 5%\n") ..core.colorize("#FFFFFF", "Critical efficiency: 2.0x\n")  ..core.colorize("#FFFFFF", "Ammunition: 12 gauge shell\n") ..core.colorize("#FFFFFF", "Rate of fire: 0.2 (full-auto)\n") ..core.colorize("#FFFFFF", "Gun type: shotgun\n") ..core.colorize("#FFFFFF", "Bullet velocity: 225"),
+		description = "" ..core.colorize("#35cdff","AA-12\n") ..core.colorize("#FFFFFF", "DMG: 3x5 | Capacity: 20 rounds\n")..core.colorize("#FFFFFF", "Ammo: 12 gauge | Type: shotgun"),
 	range = 0,
 	inventory_image = "rangedweapons_aa12.png",
 	RW_gun_capabilities = {
@@ -62,7 +62,7 @@ minetest.register_tool("rangedweapons:aa12_rld", {
 		gun_icon = "rangedweapons_aa12_icon.png",
 		gun_unloaded = "rangedweapons:aa12_r",
         gun_cooling="rangedweapons:aa12_rld",
-		gun_velocity = 225,
+		gun_velocity = 25,
 		gun_accuracy = 60,
 		gun_cooldown = 0.2,
 		gun_reload = 1.5/4,

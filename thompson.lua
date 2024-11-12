@@ -61,7 +61,7 @@ minetest.register_tool("rangedweapons:thompson_rld", {
 	minetest.register_tool("rangedweapons:thompson", {
 	stack_max= 1,
 	wield_scale = {x=1.9,y=1.9,z=1.25},
-		description = "" ..core.colorize("#35cdff","Thompson SMG\n") ..core.colorize("#FFFFFF", "Ranged damage: 6\n") ..core.colorize("#FFFFFF", "accuracy: 75%\n") ..core.colorize("#FFFFFF", "Reload delay: 1.4\n")  ..core.colorize("#FFFFFF", "Clip size: 30/30\n") ..core.colorize("#FFFFFF", "Critical chance: 8%\n") ..core.colorize("#FFFFFF", "Critical efficiency: 2.0x\n")  ..core.colorize("#FFFFFF", "Ammunition: 10mm auto/.45acp\n") ..core.colorize("#FFFFFF", "Rate of fire: 0.1 (full-auto)\n") ..core.colorize("#FFFFFF", "Gun type: smg\n") ..core.colorize("#FFFFFF", "Bullet velocity: 230"),
+description = "" ..core.colorize("#35cdff","Thompson\n") ..core.colorize("#FFFFFF", "DMG: 6 | Capacity: 30 rounds\n")..core.colorize("#FFFFFF", "Ammo: .45 ACP/10mm | Type: SMG"),
 	range = 0,
 	inventory_image = "rangedweapons_thompson.png",
 	RW_gun_capabilities = {
@@ -76,7 +76,7 @@ minetest.register_tool("rangedweapons:thompson_rld", {
 		gun_icon = "rangedweapons_thompson_icon.png",
 		gun_unloaded = "rangedweapons:thompson_r",
         gun_cooling="rangedweapons:thompson_rld",
-		gun_velocity = 230,
+		gun_velocity = 35,
 		gun_accuracy = 75,
 		gun_cooldown = 0.1,
 		gun_reload = 1.4/4,

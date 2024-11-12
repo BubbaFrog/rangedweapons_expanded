@@ -5,7 +5,7 @@ minetest.register_craftitem("rangedweapons:laer_ray_visual", {
 
 	minetest.register_tool("rangedweapons:laer", {
 	wield_scale = {x=1.9,y=1.9,z=1.8},
-		description = "" ..core.colorize("#35cdff","LAER prototype\n") ..core.colorize("#FFFFFF", "Ranged damage: 14\n") ..core.colorize("#FFFFFF", "accuracy: 89%\n") ..core.colorize("#FFFFFF", "Critical chance: 12%\n") ..core.colorize("#FFFFFF", "Critical efficiency: 1.9x\n")  ..core.colorize("#FFFFFF", "Power usage: 13\n") ..core.colorize("#FFFFFF", "Rate of fire: 0.25\n") ..core.colorize("#FFFFFF", "Enemy penetration: 40%\n") ..core.colorize("#FFFFFF", "Gun type: laser gun\n") ..core.colorize("#FFFFFF", "Bullet velocity: 80"),
+		description = "" ..core.colorize("#35cdff","LAER Prototype\n") ..core.colorize("#FFFFFF", "DMG: 14 \n")..core.colorize("#FFFFFF", "Ammo: microfusion cells (14) | Type: Laser weapon"),
 	range = 0,
     groups={not_in_creative_inventory=1},
 RW_powergun_capabilities = {
@@ -15,7 +15,7 @@ RW_powergun_capabilities = {
 		power_critEffc = 1.9,
 		power_skill = {"",1},
 		power_cooling = "rangedweapons:laer",
-		power_velocity = 80,
+		power_velocity = 35,
 		power_accuracy = 89,
 		power_cooldown = 0.25,
 		power_projectiles = 1,

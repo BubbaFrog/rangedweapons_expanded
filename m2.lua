@@ -13,13 +13,12 @@ minetest.register_tool("rangedweapons:m2_r", {
 	minetest.register_tool("rangedweapons:m2", {
 	stack_max= 1,
 	wield_scale = {x=2.0,y=2.0,z=1.4},
-		description = "" ..core.colorize("#35cdff","Browning M2 machine gun\n") ..core.colorize("#FFFFFF", "Gun damage: 7\n") ..core.colorize("#FFFFFF", "accuracy: 52%\n") ..core.colorize("#FFFFFF", "Gun Critical chance: 50%\n")..core.colorize("#FFFFFF", "Critical efficiency: 3.0x\n")  ..core.colorize("#FFFFFF", "Reload delay: 5.0\n") ..core.colorize("#FFFFFF", "Clip size: 100\n")   ..core.colorize("#FFFFFF", "Ammunition: .50 BMG rounds\n") ..core.colorize("#FFFFFF", "Rate of fire: 0.06(full-auto)\n") ..core.colorize("#FFFFFF", "Gun type: heavy machinegun\n") ..core.colorize("#FFFFFF", "Block penetration: 12%\n")
-..core.colorize("#FFFFFF", "Enemy penetration: 27%\n") ..core.colorize("#FFFFFF", "Bullet velocity: 214"),
+		description = "" ..core.colorize("#35cdff","Browning M2\n") ..core.colorize("#FFFFFF", "DMG: 8 | Capacity: 100 rounds\n")..core.colorize("#FFFFFF", "Ammo: .50 BMG | Type: Machine gun"),
 	range = 0,
 	inventory_image = "m2.png",
 	RW_gun_capabilities = {
 		automatic_gun = 1,
-		gun_damage = {fleshy=7,knockback=0},
+		gun_damage = {fleshy=8,knockback=0},
         gun_recoil = 2.6,
 		gun_crit = 50,
 		gun_critEffc = 3.0,
@@ -27,7 +26,7 @@ minetest.register_tool("rangedweapons:m2_r", {
 		gun_skill = {"heavy_skill",60},
 		gun_icon = "m2_icon.png",
 		gun_unloaded = "rangedweapons:m2_r",
-		gun_velocity = 214,
+		gun_velocity = 44,
 		gun_accuracy = 52,
 		gun_cooldown = 0.06,
 		gun_reload = 5.0,

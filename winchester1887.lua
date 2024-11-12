@@ -10,7 +10,7 @@ minetest.register_tool("rangedweapons:1887_rld", {
 })
 
 minetest.register_tool("rangedweapons:1887", {
-		description = "" ..core.colorize("#35cdff","Winchester M1887 \n") ..core.colorize("#FFFFFF", "Ranged damage: 4/pellet\n") ..core.colorize("#FFFFFF", "projectiles: 4\n") ..core.colorize("#FFFFFF", "Gun gravity: 0.5\n") ..core.colorize("#FFFFFF", "Accuracy: 65%\n") ..core.colorize("#FFFFFF", "Critical chance: 6%\n") ..core.colorize("#FFFFFF", "Critical efficiency: 2.0x\n") ..core.colorize("#FFFFFF", "Ammunition: 12 gauge shells\n") ..core.colorize("#FFFFFF", "Reload delay: 0.6\n")..core.colorize("#FFFFFF", "Clip size: 4\n") ..core.colorize("#27a600", "Gun is ready to fire!\n") ..core.colorize("#fff21c", "Right-click to load in a bullet!\n")  ..core.colorize("#FFFFFF", "Gun type: shotgun\n") ..core.colorize("#FFFFFF", "Bullet velocity: 225"),
+description = "" ..core.colorize("#35cdff","Winchester M1887\n") ..core.colorize("#FFFFFF", "DMG: 4x4 | Capacity: 4 rounds\n")..core.colorize("#FFFFFF", "Ammo: 12 gauge | Type: Shotgun"),
 	range = 0,
 	wield_scale = {x=1.9,y=1.9,z=1.1},
 	inventory_image = "1887.png",
@@ -24,7 +24,7 @@ RW_gun_capabilities = {
 		gun_icon = "1887_icon.png",
 		gun_unloaded = "rangedweapons:1887_rld",
 		gun_cooling = "rangedweapons:1887_uld",
-		gun_velocity = 225,
+		gun_velocity = 35,
 		gun_accuracy = 65,
 		gun_cooldown = 0.6,
 		gun_gravity = 0.5,
@@ -51,7 +51,7 @@ minetest.register_tool("rangedweapons:1887_uld", {
 	stack_max= 1,
 	wield_scale = {x=1.9,y=1.9,z=1.1},
 	range = 0,
-		description = "" ..core.colorize("#35cdff","Winchester M1887\n") ..core.colorize("#FFFFFF", "Ranged damage: 4/pellet\n") ..core.colorize("#FFFFFF", "projectiles: 5\n") ..core.colorize("#FFFFFF", "Gun gravity: 0.5\n") ..core.colorize("#FFFFFF", "Accuracy: 65%\n") ..core.colorize("#FFFFFF", "Critical chance: 6%\n") ..core.colorize("#FFFFFF", "Critical efficiency: 2.0x\n") ..core.colorize("#FFFFFF", "Ammunition: 12 gauge shells\n") ..core.colorize("#FFFFFF", "Reload delay: 0.6\n")..core.colorize("#FFFFFF", "Clip size: 4\n") ..core.colorize("#be0d00", "Right-click, to eject the empty shell!\n") ..core.colorize("#fff21c", "Right-click to load in a bullet!\n")  ..core.colorize("#FFFFFF", "Gun type: shotgun\n") ..core.colorize("#FFFFFF", "Bullet velocity: 225"),
+description = "" ..core.colorize("#35cdff","Winchester M1887\n") ..core.colorize("#FFFFFF", "DMG: 4x4 | Capacity: 4 rounds\n")..core.colorize("#FFFFFF", "Ammo: 12 gauge | Type: Shotgun"),
 	inventory_image = "1887.png",
 	groups = {not_in_creative_inventory = 1},
 	on_use = function(user)

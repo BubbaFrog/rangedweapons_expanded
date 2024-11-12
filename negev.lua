@@ -13,8 +13,7 @@ minetest.register_tool("rangedweapons:negev_r", {
 	minetest.register_tool("rangedweapons:negev", {
 	stack_max= 1,
 	wield_scale = {x=2.0,y=2.0,z=1.4},
-		description = "" ..core.colorize("#35cdff","IMI Negev\n") ..core.colorize("#FFFFFF", "Gun damage: 7\n") ..core.colorize("#FFFFFF", "accuracy: 55%\n")  ..core.colorize("#FFFFFF", "Gun Critical chance: 13%\n")..core.colorize("#FFFFFF", "Critical efficiency: 3.0x\n")  ..core.colorize("#FFFFFF", "Reload delay: 3.0\n") ..core.colorize("#FFFFFF", "Clip size: 150\n")   ..core.colorize("#FFFFFF", "Ammunition: 5,56mm rounds\n") ..core.colorize("#FFFFFF", "Rate of fire: 0.09(full-auto)\n") ..core.colorize("#FFFFFF", "Gun type: light machinegun\n") ..core.colorize("#FFFFFF", "Block penetration: 12%\n")
-..core.colorize("#FFFFFF", "Enemy penetration: 27%\n") ..core.colorize("#FFFFFF", "Bullet velocity: 264"),
+		description = "" ..core.colorize("#35cdff","IMI Negev\n") ..core.colorize("#FFFFFF", "DMG: 7 | Capacity: 150 rounds\n")..core.colorize("#FFFFFF", "Ammo: 5.56mm | Type: Machine gun"),
 	range = 0,
 	inventory_image = "negev.png",
 	RW_gun_capabilities = {
@@ -27,7 +26,7 @@ minetest.register_tool("rangedweapons:negev_r", {
 		gun_skill = {"heavy_skill",60},
 		gun_icon = "negev_icon.png",
 		gun_unloaded = "rangedweapons:negev_r",
-		gun_velocity = 264,
+		gun_velocity = 54,
 		gun_accuracy = 55,
 		gun_cooldown = 0.06,
 		gun_reload = 3.0,

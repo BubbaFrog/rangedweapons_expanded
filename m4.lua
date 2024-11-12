@@ -52,8 +52,7 @@ minetest.register_tool("rangedweapons:m4_rld", {
 	minetest.register_tool("rangedweapons:m4", {
 	stack_max= 1,
 	wield_scale = {x=1.75,y=1.75,z=1.3},
-		description = "" ..core.colorize("#35cdff","m4 carbine\n") ..core.colorize("#FFFFFF", "Gun damage: 5\n") ..core.colorize("#FFFFFF", "accuracy: 78%\n")  ..core.colorize("#FFFFFF", "Gun Critical chance: 11%\n")..core.colorize("#FFFFFF", "Critical efficiency: 2.75x\n")  ..core.colorize("#FFFFFF", "Reload delay: 1.0\n") ..core.colorize("#FFFFFF", "Clip size: 30\n")   ..core.colorize("#FFFFFF", "Ammunition: 5.56mm rounds\n") ..core.colorize("#FFFFFF", "Rate of fire: 0.067(full-auto)\n") ..core.colorize("#FFFFFF", "Gun type: carbine\n")
-..core.colorize("#FFFFFF", "Enemy penetration: 10%\n") ..core.colorize("#FFFFFF", "Bullet velocity: 235"),
+		description = "" ..core.colorize("#35cdff","M4 carbine\n") ..core.colorize("#FFFFFF", "DMG: 5 | Capacity: 30 rounds\n")..core.colorize("#FFFFFF", "Ammo: 5.56mm | Type: Assault rifle"),
 	range = 0,
 	inventory_image = "m4.png",
 	RW_gun_capabilities = {
@@ -68,7 +67,7 @@ minetest.register_tool("rangedweapons:m4_rld", {
 		gun_icon = "m4_icon.png",
 		gun_unloaded = "rangedweapons:m4_r",
         gun_cooling = "rangedweapons:m4_rld",
-		gun_velocity = 235,
+		gun_velocity = 45,
 		gun_accuracy = 78,
 		gun_cooldown = 0.067,
 		gun_reload = 1.0/4,

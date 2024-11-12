@@ -21,7 +21,7 @@ wield_scale = {x=3.0,y=3.0,z=2.5},
 })
 
 minetest.register_tool("rangedweapons:china_lake", {
-		description = "" ..core.colorize("#35cdff","China lake 40mm grenade launcher\n") ..core.colorize("#FFFFFF", "Direct contact damage: 12\n") ..core.colorize("#FFFFFF", "projectiles: 1\n") ..core.colorize("#FFFFFF", "Gun gravity: 8.5\n") ..core.colorize("#FFFFFF", "Accuracy: 83%\n") ..core.colorize("#FFFFFF", "Critical chance: 4%\n") ..core.colorize("#FFFFFF", "Critical efficiency: 2.0x\n") ..core.colorize("#FFFFFF", "Ammunition: 40mm grenades\n") ..core.colorize("#FFFFFF", "Pump delay: 0.8\n")..core.colorize("#FFFFFF", "Clip size: 4\n") ..core.colorize("#27a600", "Gun is ready to fire!\n") ..core.colorize("#fff21c", "Right-click to load in a bullet!\n")  ..core.colorize("#FFFFFF", "Gun type: grenade launcher\n") ..core.colorize("#FFFFFF", "Bullet velocity: 20"),
+		description = "" ..core.colorize("#35cdff","China lake 40mm grenade launcher\n") ..core.colorize("#FFFFFF", "DMG: 12 by direct contact | Capacity: 4 rounds\n")..core.colorize("#FFFFFF", "Ammo: 40mm grenades | Type: grenade launcher"),
 	range = 0,
 wield_scale = {x=3.0,y=3.0,z=2.5},
 	inventory_image = "china_lake.png",
@@ -63,7 +63,7 @@ minetest.register_tool("rangedweapons:china_lake_uld", {
 	stack_max= 1,
 wield_scale = {x=3.0,y=3.0,z=2.5},
 	range = 0,
-			description = "" ..core.colorize("#35cdff","China lake 40mm grenade launcher\n") ..core.colorize("#FFFFFF", "Direct contact damage: 12\n") ..core.colorize("#FFFFFF", "projectiles: 1\n") ..core.colorize("#FFFFFF", "Gun gravity: 0.5\n") ..core.colorize("#FFFFFF", "Accuracy: 83%\n") ..core.colorize("#FFFFFF", "Critical chance: 4%\n") ..core.colorize("#FFFFFF", "Critical efficiency: 2.0x\n") ..core.colorize("#FFFFFF", "Ammunition: 40mm grenades\n") ..core.colorize("#FFFFFF", "Pump delay: 0.8\n")..core.colorize("#FFFFFF", "Clip size: 4\n") ..core.colorize("#27a600", "Gun is ready to fire!\n") ..core.colorize("#fff21c", "Right-click to load in a bullet!\n")  ..core.colorize("#FFFFFF", "Gun type: grenade launcher\n") ..core.colorize("#FFFFFF", "Bullet velocity: 20"),
+		description = "" ..core.colorize("#35cdff","China lake 40mm grenade launcher\n") ..core.colorize("#FFFFFF", "DMG: 12 by direct contact | Capacity: 4 rounds\n")..core.colorize("#FFFFFF", "Ammo: 40mm grenades | Type: grenade launcher"),
 	groups = {not_in_creative_inventory = 1},
      inventory_image = "china_lake.png",
 	on_use = function(user)

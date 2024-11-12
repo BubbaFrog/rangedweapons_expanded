@@ -47,8 +47,7 @@ minetest.register_tool("rangedweapons:p90_rld", {
 	minetest.register_tool("rangedweapons:p90", {
 	stack_max= 1,
 	wield_scale = {x=1.75,y=1.75,z=1.3},
-		description = "" ..core.colorize("#35cdff","FN P90\n") ..core.colorize("#FFFFFF", "Gun damage: 5\n") ..core.colorize("#FFFFFF", "accuracy: 89%\n")  ..core.colorize("#FFFFFF", "Gun Critical chance: 12%\n")..core.colorize("#FFFFFF", "Critical efficiency: 2.9x\n")  ..core.colorize("#FFFFFF", "Reload delay: 1.4\n") ..core.colorize("#FFFFFF", "Clip size: 50\n")   ..core.colorize("#FFFFFF", "Ammunition: FN 5.7x28mm rounds\n") ..core.colorize("#FFFFFF", "Rate of fire: 0.07(full-auto)\n") ..core.colorize("#FFFFFF", "Gun type: SMG\n") ..core.colorize("#FFFFFF", "Block penetration: 5%\n")
-..core.colorize("#FFFFFF", "Enemy penetration: 15%\n") ..core.colorize("#FFFFFF", "Bullet velocity: 240"),
+		description = "" ..core.colorize("#35cdff","FN P90\n") ..core.colorize("#FFFFFF", "DMG: 5 | Capacity: 50 rounds\n")..core.colorize("#FFFFFF", "Ammo: 5.7x28mm | Type: SMG"),
 	range = 0,
 	inventory_image = "p90.png",
 	RW_gun_capabilities = {
@@ -63,7 +62,7 @@ minetest.register_tool("rangedweapons:p90_rld", {
 		gun_icon = "p90_icon.png",
 		gun_unloaded = "rangedweapons:p90_r",
         gun_cooling="rangedweapons:p90_rld",
-		gun_velocity = 240,
+		gun_velocity = 40,
 		gun_accuracy = 89,
 		gun_cooldown = 0.07,
 		gun_reload = 3/4,

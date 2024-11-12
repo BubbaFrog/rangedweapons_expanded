@@ -48,7 +48,7 @@ minetest.register_tool("rangedweapons:glock44_rrr", {
 
 
 minetest.register_tool("rangedweapons:glock44", {
-		description = "" ..core.colorize("#35cdff","Glock 44\n") ..core.colorize("#FFFFFF", "Gun damage: 4\n") ..core.colorize("#FFFFFF", "Accuracy: 92%\n")  ..core.colorize("#FFFFFF", "Gun Critical chance: 15%\n") ..core.colorize("#FFFFFF", "Gun Critical efficiency: 2.2x\n") ..core.colorize("#FFFFFF", "Reload delay: 0.8\n")..core.colorize("#FFFFFF", "Clip size: 10\n") ..core.colorize("#FFFFFF", "Ammunition: 22lr\n") ..core.colorize("#FFFFFF", "Rate of fire: 0.1\n") ..core.colorize("#FFFFFF", "Gun type: Handgun\n") ..core.colorize("#FFFFFF", "Bullet velocity: 230"),
+		description = "" ..core.colorize("#35cdff","Glock 44\n") ..core.colorize("#FFFFFF", "DMG: 4 | Capacity: 10 rounds\n")..core.colorize("#FFFFFF", "Ammo: .22 LR | Type: Pistol"),
 	wield_scale = {x=1.2,y=1.2,z=1.2},
 	range = 0,
 	inventory_image = "glock44.png",
@@ -64,7 +64,7 @@ RW_gun_capabilities = {
 		gun_icon = "rangedweapons_glock17_icon.png",
 		gun_unloaded = "rangedweapons:glock44_r",
 		gun_cooling = "rangedweapons:glock44_rld",
-		gun_velocity = 230,
+		gun_velocity = 30,
 		gun_accuracy = 96,
 		gun_cooldown = 0.1,
 		gun_reload = 0.9/4,

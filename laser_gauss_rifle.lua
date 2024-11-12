@@ -5,7 +5,7 @@ minetest.register_craftitem("rangedweapons:blue_ray_visual", {
 
 	minetest.register_tool("rangedweapons:gauss_rifle", {
 	wield_scale = {x=2.2,y=2.7,z=2},
-		description = "" ..core.colorize("#35cdff","Gauss rifle\n") ..core.colorize("#FFFFFF", "Ranged damage: 37\n") ..core.colorize("#FFFFFF", "accuracy: 100%\n")  ..core.colorize("#FFFFFF", "Critical chance: 9%\n") ..core.colorize("#FFFFFF", "Critical efficiency: 2.0x\n")  ..core.colorize("#FFFFFF", "Power usage: 25\n") ..core.colorize("#FFFFFF", "Rate of fire: 4\n") ..core.colorize("#FFFFFF", "Enemy penetration: 90%\n") ..core.colorize("#FFFFFF", "Gun type: laser gun\n") ..core.colorize("#FFFFFF", "Bullet velocity: 375"),
+		description = "" ..core.colorize("#35cdff","Gauss rifle\n") ..core.colorize("#FFFFFF", "DMG: 37 \n")..core.colorize("#FFFFFF", "Ammo: microfusion cells (25) | Type: Laser weapon"),
 	range = 0,
     weapon_zoom = 5,
     groups={not_in_creative_inventory=1},
@@ -15,7 +15,7 @@ RW_powergun_capabilities = {
 		power_critEffc = 2.0,
 		power_skill = {"",1},
 		power_cooling = "rangedweapons:gauss_rifle",
-		power_velocity = 70,
+		power_velocity = 75,
 		power_accuracy = 100,
 		power_cooldown = 2,
 		power_projectiles = 1,
