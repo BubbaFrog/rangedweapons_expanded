@@ -175,7 +175,7 @@ player:hud_change(gunammo, "text", gunMeta:get_int("RW_bullets"))
 if GunCaps.gun_magazine ~= nil then
 		local pos = player:get_pos()
 		local dir = player:get_look_dir()
-		local yaw = player:get_look_yaw()
+		local yaw = player:get_look_horizontal()
 		if pos and dir and yaw then
 			pos.y = pos.y + 1.4
 local obj = minetest.add_entity(pos,"rangedweapons:mag")
@@ -183,7 +183,7 @@ local obj = minetest.add_entity(pos,"rangedweapons:mag")
 obj:set_properties({textures = {GunCaps.gun_magazine}})
 	obj:set_velocity({x=dir.x*2, y=dir.y*2, z=dir.z*2})
 	obj:set_acceleration({x=0, y=-5, z=0})
-	obj:set_rotation({x=0,y=yaw+math.pi,z=0})
+	obj:set_rotation({x=0,y=yaw - math.pi/2,z=0})
 end end end
 
 if GunCaps.gun_unloaded ~= nil then
@@ -553,7 +553,7 @@ end
 
 local combined_crit = gun_crit + bullet_crit
 local combined_critEffc = gun_critEffc + bullet_critEffc
-local combined_velocity = gun_velocity/2 + bullet_velocity
+local combined_velocity = gun_velocity + bullet_velocity
 local combined_projNum = math.ceil(gun_projectiles * bullet_projMult)
 local combined_mobPen = gun_mobPen + bullet_mobPen
 local combined_nodePen = gun_nodePen + bullet_nodePen
@@ -729,7 +729,7 @@ rangedweapons_launch_projectile = function(player,projNum,projDmg,projEnt,visual
 
     		local pos = player:get_pos()
     		local dir = player:get_look_dir()
-    		local yaw = player:get_look_yaw()
+    		local yaw = player:get_look_horizontal()
     		local svertical = player:get_look_vertical()
 
     		if pos and dir and yaw then
@@ -746,7 +746,7 @@ rangedweapons_launch_projectile = function(player,projNum,projDmg,projEnt,visual
             	local shl = minetest.add_entity(pos, shellEnt)
             shl:setvelocity({x=dir.x * -10, y=dir.y * -10, z=dir.z * -10})
             shl:setacceleration({x=dir.x * -5, y= -10, z=dir.z * -5})
-            shl:set_rotation({x=0,y=yaw + math.pi,z=-svertical})
+	    shl:set_rotation({x=0,y=yaw - math.pi/2,z=-svertical})
             shl:set_properties({
             textures = {shellTexture},
             visual = shellVisual,})
@@ -802,7 +802,7 @@ glow = proj_glow,}
 							acc = ((( 100 - accuracy ) / 10) / skill_value ) or 0
 			obj:set_velocity({x=dir.x * combined_velocity + math.random(-acc,acc), y=dir.y * combined_velocity + math.random(-acc,acc), z=dir.z * combined_velocity + math.random(-acc,acc)})
 			obj:set_acceleration({x=0, y=-gravity, z=0})
-obj:set_rotation({x=0,y=yaw + math.pi,z=-svertical})
+obj:set_rotation({x=0,y=yaw - math.pi/2,z=-svertical})
 
 	end end end
 
@@ -827,7 +827,7 @@ end
 
 	  	  local pos = player:get_pos()
 	  	  local dir = player:get_look_dir()
-	  	  local yaw = player:get_look_yaw()
+	  	  local yaw = player:get_look_horizontal()
 		  if pos and dir and yaw then
 			  pos.y = pos.y + 1.6
               if rweapons_enable_shell_ejecting == "true" then
@@ -850,7 +850,7 @@ if rweapons_enable_shell_ejecting == "true" then
 		    	if obj then
   obj:set_velocity({x=dir.x*-10, y=dir.y*-10, z=dir.z*-10})
   obj:set_acceleration({x=dir.x*-5, y=-10, z=dir.z*-5})
-	  obj:set_yaw(yaw + math.pi)
+	obj:set_yaw(yaw - math.pi/2)
 	  end end end
 end
 
