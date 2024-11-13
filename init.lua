@@ -771,12 +771,7 @@ rangedweapons_launch_projectile = function(player,projNum,projDmg,projEnt,visual
 
 	projectiles = projNum or 1
 	for i=1,projectiles do
-		rndacc = (100 - accuracy) or 0
-local spawnpos_x = pos.x + (math.random(-rndacc,rndacc)/100)
-local spawnpos_y = pos.y + (math.random(-rndacc,rndacc)/100)
-local spawnpos_z = pos.z + (math.random(-rndacc,rndacc)/100)
-
-			local obj = minetest.add_entity({x=spawnpos_x,y=spawnpos_y,z=spawnpos_z}, projEnt)
+			local obj = minetest.add_entity(pos, projEnt)
 			local ent = obj:get_luaentity()
 
 obj:set_properties(
@@ -804,9 +799,9 @@ glow = proj_glow,}
 			ent.size = size
 			ent.timer = 0 + (combined_velocity/2000)
 			ent.wear = proj_wear
-				obj:set_velocity({x=dir.x * combined_velocity, y=dir.y * combined_velocity, z=dir.z * combined_velocity})
-				acc = ((( 100 - accuracy ) / 10) / skill_value ) or 0
-				obj:set_acceleration({x=math.random(-acc,acc), y=math.random(-acc,acc)-gravity, z=math.random(-acc,acc)})
+							acc = ((( 100 - accuracy ) / 10) / skill_value ) or 0
+			obj:set_velocity({x=dir.x * combined_velocity + math.random(-acc,acc), y=dir.y * combined_velocity + math.random(-acc,acc), z=dir.z * combined_velocity + math.random(-acc,acc)})
+			obj:set_acceleration({x=0, y=-gravity, z=0})
 obj:set_rotation({x=0,y=yaw + math.pi,z=-svertical})
 
 	end end end
