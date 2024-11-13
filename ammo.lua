@@ -24,7 +24,7 @@ initial_properties = {
 	visual_size = {x=0.75, y=0.75},
 	textures = {"rangedweapons:shot_bullet_visual"},
 	lastpos = {},
-        collide_with_objects = false,
+        collide_with_objects = true,
 	collisionbox = {-0.0025, -0.0025, -0.0025, 0.0025, 0.0025, 0.0025},
 },
 }
@@ -33,7 +33,8 @@ rangedweapons_shot_bullet.on_step = function(self, dtime, moveresult)
 ---------------------------------------
 
 if self.owner == nil then
-self.object:remove()
+	self.object:remove()
+	return
 end
 
 local sparks = self.sparks or 0
@@ -60,7 +61,7 @@ end end
 
 self.timer = self.timer + dtime
 
-if self.timer > 0.06 then
+if self.timer >= 0 then
 self.object:set_properties({collide_with_objects = true})
 self.object:set_properties({collisionbox = {-size, -size, -size, size, size, size}})
 end
@@ -259,7 +260,7 @@ end
 
 end
 
-if moveresult.collisions[1].type == "object" then
+if moveresult.collisions[1].type == "object" and (not moveresult.collisions[1].object:is_player() or moveresult.collisions[1].object:get_player_name() ~= self.owner) then
 
 
 local actualDamage = self.damage or {fleshy=1}
