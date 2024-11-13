@@ -799,7 +799,7 @@ glow = proj_glow,}
 			ent.size = size
 			ent.timer = 0 + (combined_velocity/2000)
 			ent.wear = proj_wear
-							acc = ((( 50 - accuracy ) / 10) / skill_value ) or 0
+							acc = (((( 100 - accuracy ) / 10) / skill_value )/3) or 0
 			obj:set_velocity({x=dir.x * combined_velocity + math.random(-acc,acc), y=dir.y * combined_velocity + math.random(-acc,acc), z=dir.z * combined_velocity + math.random(-acc,acc)})
 			obj:set_acceleration({x=0, y=-gravity, z=0})
 obj:set_rotation({x=0,y=yaw - math.pi/2,z=-svertical})
