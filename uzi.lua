@@ -63,12 +63,12 @@ minetest.register_tool("rangedweapons:uzi_rld", {
 	minetest.register_tool("rangedweapons:uzi", {
 	stack_max= 1,
 	wield_scale = {x=1.6,y=1.6,z=1.10},
-description = "" ..core.colorize("#35cdff","IMI UZI\n") ..core.colorize("#FFFFFF", "DMG: 5 | Capacity: 40/22 rounds\n")..core.colorize("#FFFFFF", "Ammo: 9x19mm Parabellum/.45 ACP | Type: SMG"),
+description = "" ..core.colorize("#35cdff","IMI UZI\n") ..core.colorize("#FFFFFF", "DMG: 4 | Capacity: 40/22 rounds\n")..core.colorize("#FFFFFF", "Ammo: 9x19mm Parabellum/.45 ACP | Type: SMG"),
 	range = 0,
 	inventory_image = "rangedweapons_uzi.png",
 	RW_gun_capabilities = {
 		automatic_gun = 1,
-		gun_damage = {fleshy=5,knockback=0},
+		gun_damage = {fleshy=4,knockback=0},
         gun_recoil = 1.1,
 		gun_crit = 5,
 		gun_critEffc = 1.9,
