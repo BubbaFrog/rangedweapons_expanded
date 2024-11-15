@@ -53,12 +53,12 @@ minetest.register_tool("rangedweapons:tmp_rld", {
 	minetest.register_tool("rangedweapons:tmp", {
 	stack_max= 1,
 	wield_scale = {x=1.15,y=1.15,z=1.15},
-description = "" ..core.colorize("#35cdff","Steyr TMP\n") ..core.colorize("#FFFFFF", "DMG: 5 | Capacity: 30 rounds\n")..core.colorize("#FFFFFF", "Ammo: 9x19mm Parabellum | Type: SMG"),
+description = "" ..core.colorize("#35cdff","Steyr TMP\n") ..core.colorize("#FFFFFF", "DMG: 4 | Capacity: 30 rounds\n")..core.colorize("#FFFFFF", "Ammo: 9x19mm Parabellum | Type: SMG"),
 	range = 0,
 	inventory_image = "rangedweapons_tmp.png",
 	RW_gun_capabilities = {
 		automatic_gun = 1,
-		gun_damage = {fleshy=5,knockback=0},
+		gun_damage = {fleshy=4,knockback=0},
         gun_recoil = 0.9,
 		gun_crit = 4,
 		gun_critEffc = 1.85,
