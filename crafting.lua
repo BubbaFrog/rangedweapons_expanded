@@ -1048,7 +1048,7 @@ minetest.register_craft({
 	}
 })
 minetest.register_craft({
-	output = "rangedweapons:steel_shuriken 30",
+	output = "rangedweapons:steel_shuriken 5",
 	recipe = {
 		{"", "default:steel_ingot", ""},
 		{"default:steel_ingot", "", "default:steel_ingot"},
@@ -1056,7 +1056,7 @@ minetest.register_craft({
 	}
 })
 minetest.register_craft({
-	output = "rangedweapons:bronze_shuriken 35",
+	output = "rangedweapons:bronze_shuriken 5",
 	recipe = {
 		{"", "default:bronze_ingot", ""},
 		{"default:bronze_ingot", "", "default:bronze_ingot"},
@@ -1064,7 +1064,7 @@ minetest.register_craft({
 	}
 })
 minetest.register_craft({
-	output = "rangedweapons:golden_shuriken 42",
+	output = "rangedweapons:golden_shuriken 5",
 	recipe = {
 		{"", "default:gold_ingot", ""},
 		{"default:gold_ingot", "", "default:gold_ingot"},
@@ -1072,7 +1072,7 @@ minetest.register_craft({
 	}
 })
 minetest.register_craft({
-	output = "rangedweapons:mese_shuriken 55",
+	output = "rangedweapons:mese_shuriken 5",
 	recipe = {
 		{"", "default:mese_crystal", ""},
 		{"default:mese_crystal", "", "default:mese_crystal"},
@@ -1080,7 +1080,7 @@ minetest.register_craft({
 	}
 })
 minetest.register_craft({
-	output = "rangedweapons:diamond_shuriken 69",
+	output = "rangedweapons:diamond_shuriken 5",
 	recipe = {
 		{"", "default:diamond", ""},
 		{"default:diamond", "", "default:diamond"},
