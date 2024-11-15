@@ -44,7 +44,7 @@ RW_throw_capabilities = {
 OnCollision = function(player,bullet,target)
 local throwDur = 40
 if bullet.wear+(65535/throwDur) < 65535 then
-javStack = {name="rangedweapons:javelin",wear=(bullet.wear)+(65535/throwDur)}
+local javStack = {name="rangedweapons:javelin",wear=(bullet.wear)+(65535/throwDur)}
 minetest.add_item(bullet.object:get_pos(),javStack) end end,
 	},
 	on_secondary_use = function(itemstack, user, pointed_thing)

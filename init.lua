@@ -93,10 +93,10 @@ end
 
 rangedweapons_reload_gun = function(itemstack, player)
 
-GunCaps = itemstack:get_definition().RW_gun_capabilities
+local GunCaps = itemstack:get_definition().RW_gun_capabilities
 
 if GunCaps ~= nil then
-gun_unload_sound = GunCaps.gun_unload_sound or ""
+local gun_unload_sound = GunCaps.gun_unload_sound or ""
 end
 
 minetest.sound_play("gun_unload_sound", {
@@ -303,7 +303,7 @@ end
 
 rangedweapons_yeet = function(itemstack, player)
 
-if minetest.find_node_near(player:getpos(), 10,"rangedweapons:antigun_block")
+if minetest.find_node_near(player:get_pos(), 10,"rangedweapons:antigun_block")
 then
    minetest.chat_send_player(player:get_player_name(), "" ..core.colorize("#ff0000","throwable weapons are prohibited in this area!"))
 else
@@ -402,7 +402,7 @@ end
 
 rangedweapons_shoot_gun = function(itemstack, player)
 
-if minetest.find_node_near(player:getpos(), 10,"rangedweapons:antigun_block")
+if minetest.find_node_near(player:get_pos(), 10,"rangedweapons:antigun_block")
 then
 minetest.sound_play("rangedweapons_empty", {
                     pos = player:get_pos(),
@@ -446,7 +446,7 @@ end
 local OnCollision = function() end
 
 local bulletStack = ItemStack({name = gunMeta:get_string("RW_ammo_name")})
-AmmoCaps = bulletStack:get_definition().RW_ammo_capabilities
+local AmmoCaps = bulletStack:get_definition().RW_ammo_capabilities
 
 local gun_damage = {fleshy=1}
 local gun_recoil = 1
@@ -456,6 +456,7 @@ local gun_accuracy = 100
 local gun_cooling = 0
 local gun_crit = 0
 local gun_critEffc = 1
+local gun_projectiles = 1
 local gun_mobPen = 0
 local gun_nodePen = 0
 local gun_shell = 0
@@ -619,7 +620,7 @@ end end
 
 rangedweapons_shoot_powergun = function(itemstack, player)
 
-if minetest.find_node_near(player:getpos(), 10,"rangedweapons:antigun_block")
+if minetest.find_node_near(player:get_pos(), 10,"rangedweapons:antigun_block")
 then
 minetest.sound_play("rangedweapons_empty", {
                     pos = player:get_pos(),
@@ -810,7 +811,7 @@ glow = proj_glow,}
 			ent.size = size
 			ent.timer = 0 + (combined_velocity/2000)
 			ent.wear = proj_wear
-							acc = (((( 100 - accuracy ) / 10) /  skill_value )/3) or 0
+							local acc = (((( 100 - accuracy ) / 10) /  skill_value )/3) or 0
 			obj:set_velocity({x=dir.x * combined_velocity + math.random(-acc,acc), y=dir.y * combined_velocity + math.random(-acc,acc), z=dir.z * combined_velocity + math.random(-acc,acc)})
 			obj:set_acceleration({x=0, y=-gravity, z=0})
 obj:set_rotation({x=0,y=yaw - math.pi/2,z=-svertical})
@@ -829,7 +830,7 @@ end
 
   local bulletStack = ItemStack({name = gunMeta:get_string("RW_ammo_name")})
 			minetest.sound_play(rldsound, {
-                    pos = player:getpos(),
+                    pos = player:get_pos(),
                     max_hear_distance = 15,
                     gain = 1.0,
                     fade = 0.0,
