@@ -305,7 +305,7 @@ damage[_] = damage[_] * critEffc
 end
 
 
-entpos = self.object:get_pos()
+local entpos = self.object:get_pos()
 minetest.add_particle	({
 pos = entpos, velocity = 0, acceleration = {x=0, y=5, z=0},
 expirationtime = 0.75, size = 12, collisiondetection = false,
@@ -316,7 +316,7 @@ end
 moveresult.collisions[1].object:punch(owner, 1.0, {
 		full_punch_interval = 1.0,
 		damage_groups = damage,}, nil)
-owner:hud_change(hit, "text", hit_texture)
+owner:hud_change(rangedweapons.hit, "text", hit_texture)
 
 	for i=1,math.random(math.ceil(rweapons_bloodyness*0.66),math.ceil(rweapons_bloodyness*1.5)) do
 if rweapons_enable_sparks == "true" then
