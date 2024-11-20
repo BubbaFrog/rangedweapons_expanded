@@ -2,6 +2,7 @@
 
 minetest.register_node("rangedweapons:generator", {
 		description = "" ..core.colorize("#35cdff","Power particle generator\n")..core.colorize("#FFFFFF", "generates 1 power particle every 3 seconds (can hold up to 200). Punch to harvest them"),
+
 	tiles = {
 		"rangedweapons_generator_top.png",
 		"rangedweapons_generator_bottom.png",
@@ -10,10 +11,10 @@ minetest.register_node("rangedweapons:generator", {
 		"rangedweapons_generator_side.png",
 		"rangedweapons_generator_side.png"
 	},
-    groups={not_in_creative_inventory=1},
+
 	paramtype = "light",
 	light_source = 9,
-	groups = {cracky = 3, oddly_breakable_by_hand = 3},
+	groups = {cracky = 3, oddly_breakable_by_hand = 3, not_in_creative_inventory=1},
 	on_timer = function(pos, elapsed)
 		minetest.get_node_timer(pos):start(3)
 	local nodemeta = minetest.get_meta(pos)
@@ -25,7 +26,7 @@ end
 	on_punch = function(pos, node, puncher)
 local nodemeta = minetest.get_meta(pos)
 local inv = puncher:get_inventory()
-inv:add_item("main", "rangedweapons:power_particle "..nodemeta:get_int("power_generated")) 
+inv:add_item("main", "rangedweapons:impure_energy "..nodemeta:get_int("power_generated")) 
 nodemeta:set_int("power_generated",0)
 nodemeta:set_string("infotext", "currently generated power:"..nodemeta:get_int("power_generated"))
 	end,

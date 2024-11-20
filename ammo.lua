@@ -98,14 +98,13 @@ end
 		pos = self.object:get_pos(),
 		velocity = {x=0, y=0, z=0},
           	acceleration = {x=0, y=0, z=0},
-		expirationtime = 3,
+		expirationtime = 2,
 		size = math.random(10,20)/10,
 		collisiondetection = false,
 		vertical = false,
 		texture = "rangedweapons_bullethole.png",
 		glow = 0,
 	})
-
 	for i=1,math.random(4,8) do
 if rweapons_enable_sparks == "true" then
 	minetest.add_particle({
@@ -184,7 +183,7 @@ end
 
 local objVel = moveresult.collisions[1].old_velocity
 local objRot = self.object:get_rotation()
-
+--[[
 if objRot and objVel then
 if moveresult.collisions[1].axis == "x" then
 self.object:set_rotation({x=0,y=objRot.y,z=objRot.z+3})
@@ -202,7 +201,7 @@ self.object:set_velocity({x=objVel.x,y=objVel.y*-1,z=objVel.z})
 end end
 
 
-else
+else]]
 
 if math.random(1,100) <= nodePen then
 	for i=1,10 do
@@ -352,7 +351,6 @@ if rweapons_enable_sparks == "true" then
 	})
 	end
 end
-minetest.sound_play("default_dig_cracky", {self.object:get_pos(), gain = 1.0})
 self.object:set_properties({collisionbox = {0,0,0,0,0,0}})
 self.object:set_velocity(moveresult.collisions[1].old_velocity)
 else

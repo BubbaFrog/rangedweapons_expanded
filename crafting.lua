@@ -9,6 +9,15 @@ minetest.register_craft({
 	}
 })
 
+minetest.register_craft({
+	output = "rangedweapons:power_particle 2",
+	recipe = {
+		{"", "default:steel_ingot", ""},
+		{"", "rangedweapons:impure_energy", ""},
+		{"", "default:steel_ingot", ""},
+	}
+})
+
 
 if rweapons_gun_crafting == "true" then
 

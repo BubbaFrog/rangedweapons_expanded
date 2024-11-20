@@ -3,6 +3,7 @@ local proj_dir
 minetest.register_tool("rangedweapons:forcegun", {
 		description = "" ..core.colorize("#35cdff","Force gun\n")..core.colorize("#FFFFFF", "It's projectile will push either the entity it hits directly, or everyone near the node it collides with far away.\n")  ..core.colorize("#FFFFFF", "Perfect for rocket-jumping or YEETing enemies away.\n")..core.colorize("#FFFFFF", "Gun type:Power Special-gun"),
 	range = 0,
+    groups = {not_in_creative_inventory=1},
 	wield_scale = {x=2.0,y=2.0,z=1.75},
 	inventory_image = "rangedweapons_forcegun.png",
 	on_use = function(itemstack, user, pointed_thing)

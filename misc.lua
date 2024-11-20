@@ -45,6 +45,14 @@ minetest.register_craftitem("rangedweapons:gun_power_core", {
 	inventory_image = "rangedweapons_gun_power_core.png",
 })
 
+minetest.register_craftitem("rangedweapons:impure_energy", {
+		description = "" ..core.colorize("#35cdff","Impure energy"),
+	stack_max = 250,
+	inventory_image = "rangedweapons_power_particle.png",
+    groups={not_in_creative_inventory=1},
+})
+
+
 minetest.register_craftitem("rangedweapons:power_particle", {
 		description = "" ..core.colorize("#35cdff","Power Particle | Microfusion cell\n")..core.colorize("#FFFFFF", "A power unit, used by laser guns"),
 	stack_max = 250,

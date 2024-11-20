@@ -5,7 +5,7 @@ minetest.register_craftitem("rangedweapons:laer_ray_visual", {
 
 	minetest.register_tool("rangedweapons:laer", {
 	wield_scale = {x=1.9,y=1.9,z=1.8},
-		description = "" ..core.colorize("#35cdff","LAER Prototype\n") ..core.colorize("#FFFFFF", "DMG: 14 \n")..core.colorize("#FFFFFF", "Ammo: microfusion cells (14) | Type: Laser weapon"),
+		description = "" ..core.colorize("#35cdff","LAER Prototype\n") ..core.colorize("#FFFFFF", "DMG: 14 \n")..core.colorize("#FFFFFF", "Ammo: microfusion cells (11) | Type: Laser weapon"),
 	range = 0,
     groups={not_in_creative_inventory=1},
 RW_powergun_capabilities = {
@@ -17,7 +17,7 @@ RW_powergun_capabilities = {
 		power_cooling = "rangedweapons:laer",
 		power_velocity = 35,
 		power_accuracy = 89,
-		power_cooldown = 0.25,
+		power_cooldown = 0.12,
 		power_projectiles = 1,
 		power_durability = 1000,
 		power_sound = "tribeam",
@@ -28,7 +28,7 @@ RW_powergun_capabilities = {
 		power_node_penetration = 0,
 		power_dps = 0,
         power_mobPen = 40,
-		power_consumption = 14,
+		power_consumption = 11,
 		power_entity = "rangedweapons:shot_bullet",
 		power_visual = "wielditem",
 		power_texture = "rangedweapons:laer_ray_visual",

@@ -585,6 +585,7 @@ end
 end
 
 --minetest.chat_send_all(minetest.serialize(combined_dmg))
+--minetest.chat_send_all(minetest.serialize(power_dmg))
 
 if gun_skill ~= "" then
 skill_value = playerMeta:get_int(gun_skill)/100
