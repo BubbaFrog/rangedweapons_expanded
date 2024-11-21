@@ -69,8 +69,8 @@ minetest.register_on_player_receive_fields(function(player, form, field)
                "label[7,2.2;usual guns, but doesn't make them]"..
                "label[7,2.5;unbreakable. They can be repaired]"..
                "label[7,2.8;with weapon repair kits, using the]"..
-                "label[7,3.4;recipe at the bottom of the page.]"..
-               "label[7,2.8;Due to their rareness, their recipes]"..
+                "label[7,3.1;recipe at the bottom of the page.]"..
+               "label[7,3.4;Due to their rareness, their recipes]"..
                 "label[7,3.7;can't be found in the crafting menu.]"..
                 "label[7,4;Because of that, their crafting recipes]"..
                 "label[7,4.3;and statistics will be on the next]"..
