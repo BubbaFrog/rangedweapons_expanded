@@ -21,7 +21,7 @@ minetest.register_tool("rangedweapons:big_iron_r", {
 
 
 minetest.register_tool("rangedweapons:big_iron", {
-		description = "" ..core.colorize("#35cdff","Big Iron") ..core.colorize("#FFFFFF", "DMG: 17 | Capacity: 6 rounds\n")..core.colorize("#FFFFFF", "Ammo: .44 lead balls | Type: revolver"),
+		description = "" ..core.colorize("#35cdff","Big Iron\n") ..core.colorize("#FFFFFF", "DMG: 17 | Capacity: 6 rounds\n")..core.colorize("#FFFFFF", "Ammo: .44 lead balls | Type: revolver"),
 	range = 0,
 	wield_scale = {x=1.25,y=1.25,z=1.1},
 	inventory_image = "big_iron.png",
