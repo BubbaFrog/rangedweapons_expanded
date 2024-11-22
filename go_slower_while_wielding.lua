@@ -10,6 +10,7 @@ local slowdown_items = {
 "rangedweapons:m200",
 "rangedweapons:m2",
 "rangedweapons:m2_r",
+"rangedweapons:gauss_rifle",
 }
 
 
