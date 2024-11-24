@@ -54,6 +54,24 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
+	output = "rangedweapons:as_val",
+	recipe = {
+		{"", "rangedweapons:as_val", "rangedweapons:repair_kit"},
+	}
+})
+
+minetest.register_craft({
+	output = "rangedweapons:as_val",
+	recipe = {
+		{"default:diamond", "default:steel_ingot", "default:diamond"},
+		{"rangedweapons:ultra_gunsteel_ingot", "rangedweapons:ultra_gunsteel_ingot", "default:steel_ingot"},
+		{"rangedweapons:plastic_sheet", "", "rangedweapons:plastic_sheet"},
+	}
+})
+
+
+
+minetest.register_craft({
 	output = "rangedweapons:ak74",
 	recipe = {
 		{"", "rangedweapons:ak74", "rangedweapons:repair_kit"},
@@ -1173,6 +1191,14 @@ minetest.register_craft({
 })
 
 
+minetest.register_craft({
+	output = "rangedweapons:939mm 10",
+	recipe = {
+		{"", "default:bronze_ingot", ""},
+		{"default:steel_ingot", "", "default:steel_ingot"},
+		{"default:steel_ingot", "tnt:gunpowder", "default:steel_ingot"},
+	}
+})
 
 
 minetest.register_craft({

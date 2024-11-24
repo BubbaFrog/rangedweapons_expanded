@@ -663,7 +663,29 @@ minetest.register_craftitem("rangedweapons:762mm", {
 })
 
 
-
+minetest.register_craftitem("rangedweapons:939mm", {
+	stack_max= 150,
+	wield_scale = {x=0.4,y=0.4,z=1.2},
+		description = "" ..core.colorize("#35cdff","9x39mm round\n")..core.colorize("#FFFFFF", "Bullet damage: 4 \n") ..core.colorize("#FFFFFF", "Bullet crit efficiency: 0.7 \n") ..core.colorize("#FFFFFF", "Bullet crit chance: 3% \n") ..core.colorize("#FFFFFF", "Bullet velocity: 20 \n") ..core.colorize("#FFFFFF", "Bullet knockback: 4 \n") ..core.colorize("#FFFFFF", "Bullet enemy Penetration: 5%\n")   ..core.colorize("#FFFFFF", "Ammunition for some guns"),
+	inventory_image = "939.png",
+	RW_ammo_capabilities = {
+		ammo_damage = {fleshy=4,knockback=4},
+		ammo_critEffc = 0.7,
+		ammo_crit = 3,
+		ammo_velocity = 20,
+		ammo_glass_breaking = 1,
+		ammo_entity = "rangedweapons:shot_bullet",
+		ammo_visual = "wielditem",
+		ammo_texture = "rangedweapons:shot_bullet_visual",
+		shell_entity = "rangedweapons:empty_shell",
+		shell_visual = "wielditem",
+		shell_texture = "rangedweapons:shelldrop",
+		ammo_mob_penetration = 5,
+		ammo_projectile_size = 0.0025,
+		has_sparks = 1,
+		ignites_explosives = 1,
+	},
+})
 
 
 minetest.register_craftitem("rangedweapons:545mm", {

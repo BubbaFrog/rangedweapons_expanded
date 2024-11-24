@@ -975,6 +975,7 @@ if rweapons_assault_rifles == "true" then
 	dofile(modpath.."/m16.lua")
 	dofile(modpath.."/g36.lua")
 	dofile(modpath.."/ak47.lua")
+    dofile(modpath.."/as_val.lua")
 	dofile(modpath.."/scar.lua")
     dofile(modpath.."/m1garand.lua")
     dofile(modpath.."/ak112.lua")
