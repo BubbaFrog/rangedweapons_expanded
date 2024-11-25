@@ -175,7 +175,7 @@ end
 
 
 if minetest.get_item_group(minetest.get_node(moveresult.collisions[1].node_pos).name, "level") > 1  then
-self.object:set_velocity(moveresult.collisions[1].old_velocity)
+
 
 if sparks > 0 then
 make_sparks(self.object:get_pos())
@@ -183,25 +183,22 @@ end
 
 local objVel = moveresult.collisions[1].old_velocity
 local objRot = self.object:get_rotation()
---[[
+
 if objRot and objVel then
 if moveresult.collisions[1].axis == "x" then
-self.object:set_rotation({x=0,y=objRot.y,z=objRot.z+3})
-self.object:set_velocity({x=objVel.x*-1,y=objVel.y,z=objVel.z})
+self.object:remove()
 end
 
 if moveresult.collisions[1].axis == "z" then
-self.object:set_rotation({x=0,y=objRot.y,z=objRot.z+3})
-self.object:set_velocity({x=objVel.x,y=objVel.y,z=objVel.z*-1})
+self.object:remove()
 end
 
 if moveresult.collisions[1].axis == "y" then
-self.object:set_rotation({x=0,y=objRot.y+3,z=objRot.z+3})
-self.object:set_velocity({x=objVel.x,y=objVel.y*-1,z=objVel.z})
+self.object:remove()
 end end
 
 
-else]]
+else
 
 if math.random(1,100) <= nodePen then
 	for i=1,10 do
