@@ -879,6 +879,7 @@ dofile(modpath.."/misc.lua")
 dofile(modpath.."/ammo.lua")
 dofile(modpath.."/crafting.lua")
 dofile(modpath.."/go_slower_while_wielding.lua")
+dofile(modpath.."/plasma_guns_and_stuff.lua")
 
 if rweapons_shurikens == "true" then
 	dofile(modpath.."/shurikens.lua")

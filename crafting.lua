@@ -460,6 +460,17 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
+	output = "rangedweapons:plasma_book",
+	recipe = {
+		{"", "default:paper", ""},
+		{"rangedweapons:gunsteel_ingot","", "rangedweapons:gunsteel_ingot"},
+		{"", "default:paper", ""},
+	}
+})
+
+
+
+minetest.register_craft({
 	output = "rangedweapons:laser_blaster",
 	recipe = {
 		{"rangedweapons:repair_kit", "rangedweapons:laser_blaster", "rangedweapons:repair_kit"},
@@ -497,6 +508,43 @@ minetest.register_craft({
 		{"rangedweapons:repair_kit", "rangedweapons:laser_rifle", "rangedweapons:repair_kit"},
 	}
 })
+
+
+minetest.register_craft({
+	output = "rangedweapons:plasma_rifle",
+	recipe = {
+		{"rangedweapons:repair_kit", "rangedweapons:plasma_rifle", "rangedweapons:repair_kit"},
+	}
+})
+
+
+minetest.register_craft({
+	output = "rangedweapons:plasma_rifle",
+	recipe = {
+		{"", "rangedweapons:ultra_gunsteel_ingot", ""},
+		{"", "rangedweapons:laser_rifle", ""},
+		{"", "rangedweapons:ultra_gunsteel_ingot", ""},
+	}
+})
+
+
+minetest.register_craft({
+	output = "rangedweapons:multiplas_rifle",
+	recipe = {
+		{"rangedweapons:repair_kit", "rangedweapons:multiplas_rifle", "rangedweapons:repair_kit"},
+	}
+})
+
+
+minetest.register_craft({
+	output = "rangedweapons:multiplas_rifle",
+	recipe = {
+		{"", "rangedweapons:ultra_gunsteel_ingot", ""},
+		{"", "rangedweapons:laser_shotgun", ""},
+		{"", "rangedweapons:ultra_gunsteel_ingot", ""},
+	}
+})
+
 
 minetest.register_craft({
 	output = "rangedweapons:laser_rifle",
