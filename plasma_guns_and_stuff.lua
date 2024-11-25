@@ -82,12 +82,12 @@ RW_powergun_capabilities = {
 
 	minetest.register_tool("rangedweapons:multiplas_rifle", {
 	wield_scale = {x=2.5,y=2.5,z=2.2},
-		description = "" ..core.colorize("#35cdff","Multiplas rifle\n") ..core.colorize("#FFFFFF", "DMG: 12x3 \n")..core.colorize("#FFFFFF", "Ammo: microfusion cells (9) | Type: Plasma weapon"),
+		description = "" ..core.colorize("#35cdff","Multiplas rifle\n") ..core.colorize("#FFFFFF", "DMG: 11x3 \n")..core.colorize("#FFFFFF", "Ammo: microfusion cells (9) | Type: Plasma weapon"),
 	range = 0,
     groups={not_in_creative_inventory=1},
 RW_powergun_capabilities = {
      --   automatic_gun = 1,
-		power_damage = {fleshy=12,knockback=0},
+		power_damage = {fleshy=11,knockback=0},
 		power_crit = 10,
 		power_critEffc = 2.0,
 		power_skill = {"",1},

@@ -5,12 +5,12 @@ minetest.register_craftitem("rangedweapons:red_ray_visual", {
 
 	minetest.register_tool("rangedweapons:laser_rifle", {
 	wield_scale = {x=1.9,y=1.9,z=1.8},
-		description = "" ..core.colorize("#35cdff","AER9 laser rifle\n") ..core.colorize("#FFFFFF", "DMG: 13 \n")..core.colorize("#FFFFFF", "Ammo: microfusion cells (8) | Type: Laser weapon"),
+		description = "" ..core.colorize("#35cdff","AER9 laser rifle\n") ..core.colorize("#FFFFFF", "DMG: 11 \n")..core.colorize("#FFFFFF", "Ammo: microfusion cells (8) | Type: Laser weapon"),
 	range = 0,
     groups={not_in_creative_inventory=1},
 RW_powergun_capabilities = {
         automatic_gun = 1,
-		power_damage = {fleshy=13,knockback=0},
+		power_damage = {fleshy=11,knockback=0},
 		power_crit = 9,
 		power_critEffc = 2.0,
 		power_skill = {"",1},
