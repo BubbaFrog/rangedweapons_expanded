@@ -1,7 +1,7 @@
 	minetest.register_tool("rangedweapons:laser_shotgun", {
 	stack_max= 1,
 	wield_scale = {x=2.0,y=2.0,z=1.75},
-		description = "" ..core.colorize("#35cdff","Tri-beam laser rifle\n") ..core.colorize("#FFFFFF", "DMG: 10x3 \n")..core.colorize("#FFFFFF", "Ammo: microfusion cells () | Type: Laser weapon"),
+		description = "" ..core.colorize("#35cdff","Tri-beam laser rifle\n") ..core.colorize("#FFFFFF", "DMG: 10x3 \n")..core.colorize("#FFFFFF", "Ammo: microfusion cells (10) | Type: Laser weapon"),
 	range = 0,
     groups={not_in_creative_inventory=1},
 	inventory_image = "tri_beam.png",
