@@ -932,7 +932,7 @@ if rweapons_shotguns == "true" then
 	dofile(modpath.."/benelli.lua")
     dofile(modpath.."/stoeger.lua")
     dofile(modpath.."/winchester1887.lua")
-  --  dofile(modpath.."/hellwalker.lua")
+    dofile(modpath.."/hellwalker.lua")
 
     dofile(modpath.."/4gaugeshotguns.lua")
 end
@@ -982,7 +982,7 @@ if rweapons_assault_rifles == "true" then
     dofile(modpath.."/ak112.lua")
     dofile(modpath.."/ak74.lua")
     dofile(modpath.."/galil.lua")
- --   dofile(modpath.."/an94.lua")
+    dofile(modpath.."/an94.lua")
     dofile(modpath.."/m4.lua")
 end
 
